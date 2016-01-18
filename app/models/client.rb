@@ -12,7 +12,7 @@ class Client < ActiveRecord::Base
     :access_key_id => ENV['S3_KEY'],
     :secret_access_key => ENV['S3_SECRET'] },
     :url => ':s3_alias_url',
-    :s3_host_alias => 'd2pp9e1d3np2k1.cloudfront.net.net', 
+    :s3_host_alias => 'd2pp9e1d3np2k1.cloudfront.net', 
     :bucket => 'elephant-music',
     :path => "clients/images/:id_partition/:style/:filename"
   end

@@ -5814,3 +5814,4 @@
 [01/18/16 15:08:16 +0000 administrators-MacBook-Pro-2.local (3297)] INFO : Finished instrumentation
 [01/18/16 15:08:16 +0000 administrators-MacBook-Pro-2.local (3297)] INFO : Doing deferred dependency-detection before Rack startup
 [01/18/16 15:08:18 +0000 administrators-MacBook-Pro-2.local (3297)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1110511/applications/9281510
+[01/18/16 17:34:06 +0000 administrators-MacBook-Pro-2.local (3297)] INFO : Starting Agent shutdown
