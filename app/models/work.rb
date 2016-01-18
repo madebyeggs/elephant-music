@@ -24,7 +24,7 @@ class Work < ActiveRecord::Base
       :access_key_id => ENV['S3_KEY'],
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
-      :s3_host_alias => 'd2pp9e1d3np2k1.cloudfront.net', 
+      :s3_host_alias => 'd1db7v2bre67o9.cloudfront.net', 
       :bucket => 'elephant-music',
       :path => "works/images/:id_partition/:style/:filename"
     end
@@ -40,7 +40,7 @@ class Work < ActiveRecord::Base
       :access_key_id => ENV['S3_KEY'],
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
-      :s3_host_alias => 'd2pp9e1d3np2k1.cloudfront.net', 
+      :s3_host_alias => 'd1db7v2bre67o9.cloudfront.net', 
       :bucket => 'elephant-music',
       :path => "works/grid_square_images/:id_partition/:style/:filename"
     end
@@ -56,7 +56,7 @@ class Work < ActiveRecord::Base
       :access_key_id => ENV['S3_KEY'],
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
-      :s3_host_alias => 'd2pp9e1d3np2k1.cloudfront.net', 
+      :s3_host_alias => 'd1db7v2bre67o9.cloudfront.net', 
       :bucket => 'elephant-music',
       :path => "works/facebook_images/:id_partition/:style/:filename"
     end
