@@ -1,0 +1,40 @@
+<div class="canScroll2 fadeMe">
+	<div class="projectInfo">
+		<h1 class="projectName titleSize1"><%= @about.title %></h1>
+		<hr class="projectSeparator" />
+		<div class="aboutText">
+			<p class="projectDetail"><%= simple_format @about.description, class: "projectDetail descriptionSize1" %></p>
+			<p class="descriptionSize1 italics"><%= @about.footer %> - <%= Date.today.strftime("%B") %> <%= Time.now.year %></p>
+		</div>
+	</div>
+	<div class="topperMargin"></div>
+	<!-- <div class="grid-whole">
+			<%# @clients.each do |c| %>
+		  		<div class="grid-eighth">
+					<div class="element">
+						<div class="images">
+							<%#= image_tag(c.image) %>
+							<div class="muteEffects">
+		 						<section class="hidden-infos">
+									<a class="launchArtist"><%#= link_to '', c.url, :target => "blank" %></a>
+		        					<div class="overlay4"></div>       					
+								</section>
+		      					<div class="vidTitle">
+		      						<div class="subtitle-wrap">
+		        					</div>
+		      					</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<%# end %>
+		</div> -->
+		<div class="grid-whole">
+			<% @clients.each do |c| %>
+				<div class="grid-eighth">
+					<%= link_to(image_tag(c.image), c.url, :target => "blank" ) %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,2 @@
+$('#announcements').append('<%= escape_javascript render(@combined_sorted) %>');
+$('.pagination').replaceWith('<%= escape_javascript will_paginate(@combined_sorted) %>')

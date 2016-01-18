@@ -1,0 +1,27 @@
+<div class="element">
+	<div class="images">
+		<div class="imageContainer">
+			<%= image_tag work.image, alt: "#{work.title} - #{work.client}" %>
+			<div class="overImage"></div>
+		</div>
+
+		<div class="muteEffects">
+			<section class="hidden-infos">
+				<a class="launchAnnouncement"><%= link_to '', placement_path(work) %></a>
+          		<div class="overlay3"></div>
+				<div class="icons4 play"></div>	        					
+			</section>
+        	<div class="vidTitle">
+				<div class="title-wrap2">
+            		<h3 class="descriptionSize1 upcase title"><%= work.client %> <i class="descriptionSize1 upcase italics">"<%= work.title %>"</i></h3>
+          		</div>
+				<div class="subtitle-wrap3">
+        			<p class="subtitle descriptionSize1 upcase italics"><%= work.artist_name %>: <%= work.track_name %></p>
+				</div>
+				<div class="subtitle-wrap borderTop italics">
+					<p><%= work.created_at.strftime("%B %Y") %></p>
+				</div>
+        	</div>
+		</div>
+	</div>
+</div>

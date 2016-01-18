@@ -1,0 +1,74 @@
+/* =Image Hover
+--------------------------------------------------------------------------------------------------------*/
+
+.element {position:relative; /*background:#e9e9e9*/ }
+.overflow, .element {overflow:hidden; }
+.images img, .images2 img {width:100%; display: block; position:relative; max-width: 100% !important; z-index:0 }
+.images, .images2 {overflow:hidden }
+.images2:hover {opacity: 0.9;}
+
+.icons { position:absolute; bottom:30px; right:40px; height:48px; width:48px; z-index:100;  pointer-events: none; -webkit-transition: all 0s ease 0s; -moz-transition: all 0s ease 0s; -o-transition: all 0s ease 0s; transition: all 0s ease 0s; }
+.icons2 { position:absolute; bottom:40px; left:40px; height:30px; width:30px; -webkit-transition: all 0s ease 0s; -moz-transition: all 0s ease 0s; -o-transition: all 0s ease 0s; transition: all 0s ease 0s; }
+.icons3 { position:absolute; bottom:70px; left:40px; height:48px; width:48px; z-index:100;  pointer-events: none; -webkit-transition: all 0s ease 0s; -moz-transition: all 0s ease 0s; -o-transition: all 0s ease 0s; transition: all 0s ease 0s; }
+.icons4 { position:absolute; bottom:40px; left:40px; height:48px; width:48px; z-index:100;  pointer-events: none; -webkit-transition: all 0s ease 0s; -moz-transition: all 0s ease 0s; -o-transition: all 0s ease 0s; transition: all 0s ease 0s; }
+.info {width:30px!important;height:30px!important;}
+.info img {width:100%!important;}
+.border .icons, .complete-border .icons { opacity:1 !important }
+.linkedin {background:url(../assets/bg-linkedin.png) center no-repeat; background-size:50px 50px; }
+.dribbble {background:url(../assets/bg-dribbble.png) center no-repeat; background-size:50px 51px; }
+.googleplus {background:url(../assets/bg-googleplus.png) center no-repeat; background-size:50px 50px; }
+.twitter {background:url(../assets/bg-twitter.png) center no-repeat; background-size:50px 51px; } 
+.facebook {background:url(../assets/bg-facebook.png) center no-repeat; background-size:50px 51px; }
+.behance {background:url(../assets/bg-behance.png) center no-repeat; background-size:50px 50px; }
+.skype {background:url(../assets/bg-skype.png) center no-repeat; background-size:50px 51px; }
+.link {background:url(../assets/bg-link.png) center no-repeat; background-size:48px 48px; }
+.video {background:url(../assets/bg-video.png) center no-repeat; background-size:48px 48px; }
+.play {background:url(../assets/bg-play.png) center no-repeat; background-size:48px 48px; }
+.zoom {background:url(../assets/bg-zoom.png) center no-repeat; background-size:48px 48px; }
+.quote {background:url(../assets/bg-quote.png) center no-repeat; background-size:48px 48px; }
+.profile {background:url(../assets/bg-profile.png) center no-repeat; background-size:48px 48px; }
+.tags {background:url(../assets/bg-tags.png) center no-repeat; background-size:48px 48px; }
+.detail {background:url(../assets/bg-detail.png) center no-repeat; background-size:48px 48px; }
+.email {background:url(../assets/bg-email.png) center no-repeat; background-size:48px 48px; }
+.website {background:url(../assets/bg-website.png) center no-repeat; background-size:48px 48px; }
+
+.vidTitle, .vidSubtitle { z-index:1001; position:absolute; top:25px; left:40px; width:auto; font-weight:600; cursor:pointer; pointer-events: none; }
+.vidSubtitle { top: 46px; font-weight: 400; left:40px !important; }
+.title-wrap, .title-wrap2, .subtitle-wrap, .subtitle-wrap2, .subtitle-wrap3 { overflow: hidden; position: relative;text-transform:uppercase; }
+.title-wrap h3, .title-wrap2 h3, .subtitle-wrap p, .subtitle-wrap2 p, .subtitle-wrap3 { overflow: hidden; white-space: nowrap; color:#fff; padding:0px; font-weight:700; text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3); }
+.title-wrap h3, .title-wrap2 h3 {font-size:14px; letter-spacing:1px; text-transform:uppercase;}
+.subtitle-wrap p {font-size:12px; font-weight:400;font-family:'Raleway';font-style:none;margin-top:12px;text-transform:none;text-align:justify;}
+.subtitle-wrap {margin-top:-22px!important;width:110%;}
+.subtitle-wrap2 p, .subtitle-wrap3 p {font-size:12px; font-weight:400;font-family:'Raleway';font-style:none;margin-top:22px;text-transform:none;overflow:visible;white-space:normal;text-align:justify;}
+.subtitle-wrap2 {margin-top:-20px!important;width:90%;}
+.subtitle-wrap3 {margin-top:-20px!important;width:120%;}
+.middleFixer {text-transform:uppercase!important;margin-top:50%!important;}
+.title-wrap h3 {overflow:visible;white-space:normal;}
+.title-wrap2 {margin-top:-22px;margin-bottom:-30px!important;}
+
+.inline2 {background-color:#000000;color:#ffffff;display:none;width:60%;margin:0 auto;}
+.inlineContent {font-family:'Raleway';font-size:25px;margin:15px;}
+.projectInfo {width:80%;margin:10px 10%;padding:2px 0px 40px 0px;}
+.projectName {text-align:left;margin:30px 0px 22px 0px;}
+.projectSubtitle {margin:0;}
+.projectSeparator {color:#ffffff; margin:30px 0px 15px 0px;}
+.projectDetail {margin:20px 0px 40px;text-align:justify;}
+
+.hidden-infos a {position:absolute; top:0; left:0; width:100%; height:100%; z-index:1000 }
+.hidden-infos { display:none; position:absolute; top:0; left:0; width:100%; height:100%; z-index:1000 }
+.overlay { display:block; position:absolute; top:0; /*left:0;*/ background:url(../assets/bg-overlay.png) repeat; z-index:10; width:100%; height:960px; /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; -moz-opacity: 0; -khtml-opacity: 0; opacity: 0;*/ }
+.overlay2 { display:block; position:absolute; top:0; /*left:0;*/ background:url(../assets/bg-overlay.png) repeat; z-index:10; width:100%; height:960px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+.overlay3 { display:block; position:absolute; top:0; /*left:0;*/ background:url(../assets/bg-overlay3.png) repeat; z-index:10; width:100%; height:960px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; }
+.overlay4 { display:block; position:absolute; top:0; /*left:0;*/ background:url(../assets/bg-overlay4.png) repeat; z-index:10; width:100%; height:960px; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; }
+
+.overImage { position:absolute; top:0px; width:100%; height:100%; background:url(../assets/bg-overlay.png) repeat; z-index:10; }
+/* End Image Hover
+--------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 992px){
+	.title-wrap2 h3 {overflow:visible;white-space:normal;margin:0px!important;padding:0px!important;}
+}
+
+@media only screen and (max-width: 563px) {
+	.icons2, .icons4 {display:none;}
+}

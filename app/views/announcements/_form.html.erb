@@ -1,0 +1,55 @@
+<div class="col-md-12">
+	<div class="logo2"><%= link_to(image_tag('newLogo.jpg'), cms_path) %></div>
+</div>
+
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 topper">
+
+		<h1 class="formHeader">Add/edit your news item's content below</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<%= form_for(@announcement) do |f| %>
+				<div class="col-md-5">
+					<%= f.label :title, class: "formLabel" %>
+	    			<%= f.text_field :homepage_title, class: 'formField' %>
+					<%= f.label :description, class: "formLabel" %>
+	    			<%= f.text_area :description, class: 'formArea' %>
+				</div>
+				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-6">
+					<%= f.label :vimeo_identifier_eg_86412013, class: "formLabel" %>
+	    			<%= f.text_field :vimeo, class: 'formField' %>
+					<%= f.label :soundcloud_identifier_eg_59219255, class: "formLabel" %>
+	    			<%= f.text_field :soundcloud, class: 'formField' %>
+					<%= f.label :square_image_if_no_video_in_post_300X300, class: "formLabel" %><br />
+					<%= f.file_field :square_image %>
+					<% if @announcement.square_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @announcement.square_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :homepage_image_710X210, class: "formLabel" %><br />
+					<%= f.file_field :image %>
+					<% if @announcement.image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @announcement.image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :facebook_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :facebook_image %>
+					<% if @announcement.facebook_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @announcement.facebook_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= link_to "Cancel", cms_path, :class => "btn" %>
+		    		<% if @user.email != @testing %>
+						<%= f.submit class: "btn", data: {disable_with: "Submitting..."} %>
+					<% end %>
+				</div>
+			<% end %>
+		</div>
+	
+	</div>
+</div>

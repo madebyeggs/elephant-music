@@ -1,0 +1,70 @@
+<div class="canScroll4">
+	<div class="projectInfo">
+		<% if request.referer == "http://localhost:3000/releases" %>
+			<%= link_to '', releases_path, :class => "artistCloseIcon" %>
+		<% elsif request.referer == "https://powerful-basin-1782.herokuapp.com/releases" %>
+			<%= link_to '', releases_path, :class => "artistCloseIcon" %>
+		<% elsif request.referer == "http://splitmusic.co.uk/releases" %>
+			<%= link_to '', releases_path, :class => "artistCloseIcon" %>
+		<% else %>
+			<%= link_to '', news_index_path, :class => "artistCloseIcon" %>
+		<% end %>
+		<h1 class="projectName titleSize1"><%= @sound.title %></h1>
+		<div class="links">
+			<input id="twitter" type="hidden" 
+				data-url="<%= @currentUrl %>"
+				data-media="<%= @sound.facebook_image %>"
+				data-description="<%= truncate(@sound.description, :length => 50) %>" 
+				data-via="fairsplitmusic" 
+				data-related="FairsplitMusic"  
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'twitter' }, :class => 'prettySocial fa fa-twitter socialLinks' %>
+			<input id="facebook" type="hidden" 
+				data-url="<%= @currentUrl %>"
+				data-media="<%= @sound.facebook_image %>"
+				data-description="<%= @sound.description %>"
+				data-title="<%= @sound.title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'facebook' }, :class => 'prettySocial fa fa-facebook socialLinks' %>
+			<input id="googleplus" type="hidden" 
+				data-url="<%= @currentUrl %>"
+				data-media="<%= @sound.facebook_image %>"
+				data-description="<%= @sound.description %>"
+				data-title="<%= @sound.title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'googleplus' }, :class => 'prettySocial fa fa-google-plus socialLinks' %>
+			<input id="pinterest" type="hidden" 
+				data-url="<%= @currentUrl %>" 
+				data-media="<%= @sound.facebook_image %>"
+				data-description="<%= @sound.description %>"
+				data-title="<%= @sound.title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'pinterest' }, :class => 'prettySocial fa fa-pinterest socialLinks' %>
+			<!-- <input id="linkedin" type="hidden" 
+							data-url="<%#= @currentUrl %>" 
+							data-title="Fairsplit Music project" 
+							data-description="Fairsplit Music are deligthed to have recently worked with <%#= @work.client %> on thier new project <%#= @work.title %>."
+							data-via="fairsplitmusic" 
+							data-media="https://s3.amazonaws.com/fairsplit-images/SPLIT_MUSIC_1200_630_all_top_level.jpg" 
+							class="socialLinksHidden"
+						>
+						<%#= link_to "", "#", data: { type: 'linkedin' }, :class => 'prettySocial fa fa-linkedin socialLinks' %> -->
+		</div>
+		<hr class="projectSeparator" />
+		<div class="soundContainer">
+			<div class="col-md-5"><%= image_tag(@sound.grid_square_image, class: "image") %></div>
+			<div class="col-md-7">
+				<div class="fitvids fluidMedia">
+					<iframe width="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/<%= @sound.soundcloud %>&amp;color=bdbdbd&amp;background_color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_artwork=false" src="about:blank">
+					</iframe>
+				</div>
+			</div>
+		</div>
+		<hr class="projectSeparator" style="clear:both;" />
+		<% if @sound.description? %><p class="projectDetail"><%= simple_format @sound.description, :class => "projectDetail descriptionSize1" %></p><% end %>
+	</div>
+</div>

@@ -1,0 +1,41 @@
+<div class="col-md-12">
+	<div class="logo2"><a href="../"><%= image_tag('newLogo.jpg') %></a></div>
+</div>
+
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 topper">
+		
+		<h1 class="formHeader">Edit</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<div class="col-md-4">&nbsp;</div>
+			<div class="col-md-4">
+				
+				<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+				  <%= devise_error_messages! %>
+
+				  <div><%= f.label :email, :class => "formLabel" %><br />
+				  <%= f.email_field :email, autofocus: true, :class => "formField" %></div>
+
+				  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+				    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+				  <% end %>
+
+				  <div><%= f.label :password, :class => "formLabel" %> <i class="formLabel">(leave blank if you don't want to change it)</i><br />
+				    <%= f.password_field :password, autocomplete: "off", :class => "formField" %></div>
+
+				  <div><%= f.label :password_confirmation, :class => "formLabel" %><br />
+				    <%= f.password_field :password_confirmation, autocomplete: "off", :class => "formField" %></div>
+
+				  <div><%= f.label :current_password, :class => "formLabel" %> <i class="formLabel">(we need your current password to confirm your changes)</i><br />
+				    <%= f.password_field :current_password, autocomplete: "off", :class => "formField" %></div>
+
+				  <div><%= f.submit "Update", class: "btn" %></div>
+				<% end %>
+				
+			</div>
+			<div class="col-md-4">&nbsp;</div>
+		</div>
+	</div>
+</div>

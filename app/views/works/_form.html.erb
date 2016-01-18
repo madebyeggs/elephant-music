@@ -1,0 +1,67 @@
+<div class="col-md-12">
+	<div class="logo2"><%= link_to(image_tag('newLogo.jpg'), cms_path) %></div>
+</div>
+
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 topper">
+
+		<h1 class="formHeader">Add/edit your placement's content below</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<%= form_for(@work) do |f| %>
+				<div class="col-md-5">
+					<%= f.label :click_if_this_is_the_latest_work, class: "formLabel" %>
+					<%= f.check_box :latest %> <br /><br/>
+					<%= f.label :click_to_add_this_to_the_homepage, class: "formLabel" %>
+					<%= f.check_box :homepage %> <br /><br/>
+					<%= f.label :title, class: "formLabel" %>
+	    			<%= f.text_field :title, class: 'formField' %>
+					<%= f.label :client, class: "formLabel" %>
+	    			<%= f.text_field :client, class: 'formField' %>
+					<%= f.label :type_of_work, class: "formLabel" %>
+	    			<%= f.text_field :type_of_work, class: 'formField' %>
+					<%= f.label :artist_name, class: "formLabel" %>
+	    			<%= f.text_field :artist_name, class: 'formField' %>
+					<%= f.label :Assign_to_which_composer_for_bespoke?, class: "formLabel" %><br/>
+					<%= f.collection_select :artist_id, Artist.all, :id, :name, :include_blank => true %><br/><br/>
+					<%= f.label :track_name, class: "formLabel" %>
+	    			<%= f.text_field :track_name, class: 'formField' %>
+					<%= f.label :vimeo_identifier_eg_86412013, class: "formLabel" %>
+	    			<%= f.text_field :vimeo, class: 'formField' %>
+				</div>
+				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-6">
+					<%= f.label :description, class: "formLabel" %>
+	    			<%= f.text_area :description, class: 'formArea' %>
+					<%= f.label :main_grid_square_image_400X400, class: "formLabel" %><br />
+					<%= f.file_field :grid_square_image %>
+					<% if @work.grid_square_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @work.grid_square_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :homepage_image_710X210, class: "formLabel" %><br />
+					<%= f.file_field :image %>
+					<% if @work.image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @work.image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :Facebook_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :facebook_image %>
+					<% if @work.facebook_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @work.facebook_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= link_to "Cancel", cms_path, :class => "btn" %>
+					<% if @user.email != @testing %>
+						<%= f.submit "update placement", class: "btn", data: {disable_with: "Submitting..."} %>
+					<% end %>
+				</div>
+			<% end %>
+		</div>
+	
+	</div>
+</div>

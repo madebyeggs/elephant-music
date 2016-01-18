@@ -1,0 +1,61 @@
+<div class="cmsWrapper">
+	<div class="releases">
+		<div class="divHeader">Placements</div>
+		<div class="tableWrapper">
+			<div class="tableContent">
+				<% if @works.count > 0 %>
+					<table width="100%">
+						<tr class="tableHeader">
+							<th>TITLE</th>
+							<th>CLIENT</th>
+							<th>INFO</th>
+							<th>VIMEO</th>
+							<th>LATEST</th>
+							<th>HOME</th>
+							<th>ARTIST</th>
+							<th>FB IMAGE</th>
+						</tr>
+						<tr><hr class="ruler"/></tr>
+						<% @works.each do |work| %>
+						<% artist_name = work.artist.name rescue "NONE" %>
+							<tr class="tableRow">
+								<td width="27%"><%= truncate(work.title, :length => 25) %></td>
+								<td width="22%"><%= truncate(work.client, :length => 20) %></td>
+								<% if work.description.blank? || work.description == '' %>
+									<td width="6%">NO</td>
+								<% else %>
+									<td width="6%">YES</td>
+								<% end %>
+								<td width="8%"><%= work.vimeo %></td>
+								<td width="6%"><%= work.latest %></td>
+								<td width="6%"><% if work.homepage == true %><%= "true" %><% else %><%= "false" %><% end %></td>
+								<td width="10%"><%= truncate(artist_name, :length => 11) %></td>
+								<% if work.facebook_image == '' || work.facebook_image.blank? %>
+									<td width="10%" class="topperButtons">NO</td>
+								<% else %>
+									<td width="10%" class="topperButtons">YES</td>
+								<% end %>
+								<td width="1%" class="topperButtons"></td>
+								<td width="1%" class="topperButtons"><%= link_to "E", edit_placement_path(work), :title => "Edit #{work.title}", :class => "btn btn2 tips" %></td>
+								<% if @user.email != @testing %>
+									<td width="1%" class="topperButtons"><%= button_to "X", work, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>		
+								<% end %>
+							</tr>
+						<% end %>
+					</table>
+				<% else %>
+					<table width="100%">
+						<tr class="tableRow empty">
+							<td>
+								<em>YOU HAVE NO WORKS YET... ADD SOME BELOW ?!</em>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h6>
+	<input type="hidden" value="works" class="modal-model-type">
+	<h6><%= link_to 'Add new work', new_work_path, :class => "darkButton2" %></h6>
+</div>

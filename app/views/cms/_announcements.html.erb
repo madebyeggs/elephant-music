@@ -1,0 +1,49 @@
+<div class="cmsWrapper">
+	<div class="releases">
+		<div class="divHeader">News items</div>
+		<div class="tableWrapper">
+			<div class="tableContent">
+				<% if @announcements.count > 0 %>
+					<table width="100%">
+						<tr class="tableHeader">
+							<th>TITLE</th>
+							<th>DESCRIPTION</th>
+							<th>VIMEO</th>
+							<th>S'CLOUD</th>
+							<th>FB IMAGE</th>
+						</tr>
+						<tr><hr class="ruler"/></tr>
+						<% @announcements.each do |a| %>
+							<tr class="tableRow">
+								<td width="26%"><%= truncate(a.homepage_title, :length => 22) %></td>
+								<td width="41%"><%= truncate(a.description, :length => 45) %></td>
+								<td width="9%"><%= a.vimeo %></td>
+								<td width="11%"><%= a.soundcloud %></td>
+								<% if a.facebook_image == '' || a.facebook_image.blank? %>
+									<td width="10%" class="topperButtons">NO</td>
+								<% else %>
+									<td width="10%" class="topperButtons">YES</td>
+								<% end %>
+								<td width="1%" class="topperButtons"><%= link_to "E", edit_announcement_path(a), :title => "Edit announcement", :class => "btn btn2 tips" %></td>
+								<% if @user.email != @testing %>
+									<td width="1%" class="topperButtons"><%= button_to "X", a, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>
+								<% end %>
+							</tr>
+						<% end %>
+					</table>
+				<% else %>
+					<table width="100%">
+						<tr class="tableRow empty">
+							<td>
+								<em>YOU HAVE NO NEWS ITEMS YET... ADD SOME BELOW ?!</em>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h6>
+	<input type="hidden" value="works" class="modal-model-type">
+	<h6><%= link_to 'Add news item', new_announcement_path, :class => "darkButton2" %></h6>
+</div>

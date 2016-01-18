@@ -1,0 +1,41 @@
+<div class="cmsWrapper">
+	<div class="releases">
+		<div class="divHeader">Clients</div>
+		<div class="tableWrapper">
+			<div class="tableContent">
+				<% if @clients.count > 0 %>
+					<table width="100%">
+						<tr class="tableHeader">
+							<th>NAME</th>
+							<th>CLIENT WEBSITE URL</th>
+							<th>IMAGE?</th>
+						</tr>
+						<tr><hr class="ruler"/></tr>
+						<% @clients.each do |c| %>
+							<tr class="tableRow">
+								<td width="46%"><%= truncate(c.name, :length => 42) %></td>
+								<td width="40%"><%= c.url %></td>
+								<td width="12%"><% if c.image.present? %><%= "yes" %><% else %><%= "no" %><% end %></td>
+								<td width="1%" class="topperButtons"><%= link_to "E", edit_client_path(c), :title => "Edit #{c.name}",:class => "btn btn2 tips" %></td>
+								<% if @user.email != @testing %>
+									<td width="1%" class="topperButtons"><%= button_to "X", c, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>
+								<% end %>
+							</tr>
+						<% end %>
+					</table>
+				<% else %>
+					<table width="100%">
+						<tr class="tableRow empty">
+							<td>
+								<em>YOU HAVE NO CLIENTS YET... ADD SOME BELOW ?!</em>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h6>
+	<input type="hidden" value="works" class="modal-model-type">
+	<h6><%= link_to 'Add client', new_client_path, :class => "darkButton2" %></h6>
+</div>

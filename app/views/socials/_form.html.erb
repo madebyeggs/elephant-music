@@ -1,0 +1,64 @@
+<div class="col-md-12">
+	<div class="logo2"><%= link_to(image_tag('newLogo.jpg'), cms_path) %></div>
+</div>
+
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 topper">
+
+		<h1 class="formHeader">Add/edit your social record's content below</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<%= form_for(@social) do |f| %>
+				<div class="col-md-12">
+					<%= f.label :news_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :announcements_image %>
+					<% if @social.announcements_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @social.announcements_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :works_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :works_image %>
+					<% if @social.works_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @social.works_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :artists_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :artists_image %>
+					<% if @social.artists_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @social.artists_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :playlists_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :playlists_image %>
+					<% if @social.playlists_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @social.playlists_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :abouts_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :abouts_image %>
+					<% if @social.abouts_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @social.abouts_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :contacts_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :contacts_image %>
+					<% if @social.contacts_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @social.contacts_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= link_to "Cancel", cms_path, :class => "btn" %>
+					<% if @user.email != @testing %>
+						<%= f.submit class: "btn", data: {disable_with: "Submitting..."} %>
+					<% end %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="element">
+	<div class="images">
+		<div class="imageContainer">
+			<%= image_tag artist.image, alt: "#{artist.name}" %>
+			<div class="overImage"></div>
+		</div>
+
+		<div class="muteEffects">
+			<section class="hidden-infos">
+				<a class="launchAnnouncement"><%= link_to '', artist_path(artist) %></a>
+          		<div class="overlay3"></div>
+				<div class="icons4 play"></div>	        					
+			</section>
+        	<div class="vidTitle">
+        		<div class="title-wrap2">
+	            	<h3 class="descriptionSize1 upcase title"><%= artist.name %></h3>
+	          	</div>
+				<div class="subtitle-wrap2">
+            		<p class="subtitle"><%= truncate(artist.description, :length => 260, :class => "descriptionSize1") %></p>
+				</div>
+				<div class="subtitle-wrap borderTop italics">
+    				<p><%= artist.created_at.strftime("%B %Y") %></p>
+				</div>
+        	</div>
+		</div>
+	</div>
+</div>

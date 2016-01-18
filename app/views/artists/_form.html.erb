@@ -1,0 +1,61 @@
+<div class="col-md-12">
+	<div class="logo2"><%= link_to(image_tag('newLogo.jpg'), cms_path) %></div>
+</div>
+
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 topper">
+
+		<h1 class="formHeader">Add/edit your artist's content below</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<%= form_for @artist, html: { multipart: true } do |f| %>
+				<div class="col-md-5">
+					<%#= f.label :click_if_this_is_the_latest_artist, class: "formLabel" %>
+					<%#= f.check_box :latest %> <!-- <br /><br/> -->
+					<%= f.label :click_to_add_this_to_the_homepage, class: "formLabel" %>
+					<%= f.check_box :homepage %> <br /><br/>
+					<%= f.label :name, class: "formLabel" %>
+	    			<%= f.text_field :name, class: 'formField' %>
+					<%= f.label :info, class: "formLabel" %>
+	    			<%= f.text_area :description, class: 'formAreaArtist' %>
+					<%= f.label :facebook_url, class: "formLabel" %>
+	    			<%= f.text_field :fb_url, class: 'formField' %>
+					<%= f.label :twitter_name, class: "formLabel" %>
+	    			<%= f.text_field :twitter_name, class: 'formField' %>
+					<%= f.label :soundcloud_identifier_eg_59219255, class: "formLabel" %>
+		    		<%= f.text_field :soundcloud, class: 'formField' %>
+				</div>
+				<div class="col-md-1">&nbsp;</div>
+				<div class="col-md-6">
+					<%= f.label :main_grid_square_image_400X400, class: "formLabel" %><br />
+					<%= f.file_field :square_image %>
+					<% if @artist.square_image.exists? %>
+					  <p class="existingImageName">{ Current Image: "<%= @artist.square_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :homepage_image_710X210_before_uploading, class: "formLabel" %><br />
+					<%= f.file_field :image %>
+					<% if @artist.image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @artist.image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :facebook_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :facebook_image %>
+					<% if @artist.facebook_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @artist.facebook_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= link_to "Cancel", cms_path, :class => "btn" %>
+		    		<% if @user.email != @testing %>
+						<%= f.submit class: "btn", data: {disable_with: "Submitting..."} %>
+					<% end %>
+				</div>
+			<% end %>
+		</div>
+	
+	</div>
+</div>

@@ -1,0 +1,83 @@
+<div class="canScroll5">
+	<div class="projectInfo">
+		<%= link_to '', news_index_path, :class => "artistCloseIcon" %>
+		<h1 class="projectName titleSize1"><%= @announcement.homepage_title %></h1>
+		<div class="links">
+			<input id="twitter" type="hidden" 
+				data-url="<%= @currentUrl %>"
+				data-media="<%= @announcement.facebook_image %>"
+				data-description="<%= truncate(@announcement.description, :length => 50) %>" 
+				data-via="FairsplitMusic"
+				data-related="FairsplitMusic"  
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'twitter' }, :class => 'prettySocial fa fa-twitter socialLinks' %>
+			<input id="facebook" type="hidden" 
+				data-url="<%= @currentUrl %>"
+				data-media="<%= @announcement.facebook_image %>"
+				data-description="<%= @announcement.description %>"
+				data-title="<%= @announcement.homepage_title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'facebook' }, :class => 'prettySocial fa fa-facebook socialLinks' %>
+			<input id="googleplus" type="hidden" 
+				data-url="<%= @currentUrl %>"
+				data-media="<%= @announcement.facebook_image %>"
+				data-description="<%= @announcement.description %>"
+				data-title="<%= @announcement.homepage_title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'googleplus' }, :class => 'prettySocial fa fa-google-plus socialLinks' %>
+			<input id="pinterest" type="hidden" 
+				data-url="<%= @currentUrl %>" 
+				data-media="<%= @announcement.facebook_image %>"
+				data-description="<%= @announcement.description %>"
+				data-title="<%= @announcement.homepage_title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'pinterest' }, :class => 'prettySocial fa fa-pinterest socialLinks' %>
+			<!-- <input id="linkedin" type="hidden" 
+							data-url="<%#= @currentUrl %>" 
+							data-title="Fairsplit Music project" 
+							data-description="Fairsplit Music are deligthed to have recently worked with <%#= @work.client %> on thier new project <%#= @work.title %>."
+							data-via="fairsplitmusic" 
+							data-media="https://s3.amazonaws.com/fairsplit-images/SPLIT_MUSIC_1200_630_all_top_level.jpg" 
+							class="socialLinksHidden"
+						>
+						<%#= link_to "", "#", data: { type: 'linkedin' }, :class => 'prettySocial fa fa-linkedin socialLinks' %> -->
+		</div>
+		<hr class="projectSeparator" />
+		<div class="artist-left">
+			<p class="projectDetail"><%= simple_format @announcement.description, :class => "projectDetail descriptionSize1" %></p>
+		</div>
+
+		<div class="artist-right">
+			<% if @announcement.vimeo? %>
+				<div class="artistVideoContainer">
+					<div id="videoLoader">
+						<span class="centerer"></span>
+						<%= image_tag 'status2.gif', :id => "loadingImage" %>
+					</div>
+					<div class="fitvids topMargin">
+						<iframe id="videoPlayer" src="https://player.vimeo.com/video/<%= @announcement.vimeo %>?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<hr class="projectSeparator" />
+					</div>
+				</div>
+			<% else %>
+				<div class="artistSquareContainer">
+					<div class="squareImage">
+						<%= image_tag(@announcement.square_image, :class => "squareImage") %>
+					</div>
+					<hr class="projectSeparator" />
+				</div>
+			<% end %>
+		</div>
+
+		<div class="artist-bottom">
+			<% if @announcement.soundcloud? %>
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/<%= @announcement.soundcloud %>&amp;color=bdbdbd&amp;background_color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_artwork=false">
+				</iframe>
+			<% end %>
+		</div>
+	</div>
+</div>

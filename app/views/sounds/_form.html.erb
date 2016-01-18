@@ -1,0 +1,58 @@
+<div class="col-md-12">
+	<div class="logo2"><%= link_to(image_tag('newLogo.jpg'), cms_path) %></div>
+</div>
+
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 topper">
+
+		<h1 class="formHeader">Add/edit your releases's content below</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<%= form_for(@sound) do |f| %>
+				<div class="col-md-5">
+					<%#= f.label :click_if_this_is_the_latest_playlist, class: "formLabel" %>
+					<%#= f.check_box :latest %> <!-- <br /><br/> -->
+					<%= f.label :click_to_add_this_to_the_homepage, class: "formLabel" %>
+					<%= f.check_box :homepage %> <br /><br/>
+					<%= f.label :title, class: "formLabel" %>
+	    			<%= f.text_field :title, class: 'formField' %>
+					<%= f.label :soundcloud_identifier_eg_86412013, class: "formLabel" %>
+	    			<%= f.text_field :soundcloud, class: 'formField' %>
+					<%= f.label :main_grid_square_image_400X400, class: "formLabel" %><br />
+					<%= f.file_field :grid_square_image %>
+					<% if @sound.grid_square_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @sound.grid_square_image_file_name %>" }</p>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :homepage_image_710X210, class: "formLabel" %><br />
+					<%= f.file_field :image %>
+					<% if @sound.image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @sound.image_file_name %>" }</p>
+					<% else %>
+						<br/>
+					<% end %>
+					<%= f.label :Facebook_image_1200X630, class: "formLabel" %><br />
+					<%= f.file_field :facebook_image %>
+					<% if @sound.facebook_image.exists? %>
+						<p class="existingImageName">{ Current Image: "<%= @sound.facebook_image_file_name %>" }</p><br/>
+					<% else %>
+						<br/>
+					<% end %>
+					<br/>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<%= f.label :description, class: "formLabel" %>
+	    			<%= f.text_area :description, class: 'formArea' %>
+					<%= link_to "Cancel", cms_path, :class => "btn" %>
+					<% if @user.email != @testing %>
+						<%= f.submit "update release", class: "btn", data: {disable_with: "Submitting..."} %>
+					<% end %>
+				</div>
+			<% end %>
+		</div>
+	
+	</div>
+</div>

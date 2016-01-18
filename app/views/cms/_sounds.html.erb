@@ -1,0 +1,55 @@
+<div class="cmsWrapper">
+	<div class="releases">
+		<div class="divHeader">Releases</div>
+		<div class="tableWrapper">
+			<div class="tableContent">
+				<% if @sounds.count > 0 %>
+					<table width="100%">
+						<tr class="tableHeader">
+							<th>TITLE</th>
+							<th>INFO</th>
+							<th>S'CLOUD</th>
+							<th>LATEST</th>
+							<th>HOME</th>
+							<th>FB IMAGE</th>
+						</tr>
+						<tr><hr class="ruler"/></tr>
+						<% @sounds.each do |s| %>
+							<tr class="tableRow">
+								<td width="44%"><%= truncate(s.title, :length => 50) %></td>
+								<% if s.description.blank? || s.description == '' %>
+									<td width="10%">NO</td>
+								<% else %>
+									<td width="10%">YES</td>
+								<% end %>
+								<td width="12%"><%= s.soundcloud %></td>
+								<td width="7%"><%= s.latest %></td>
+								<td width="7%"><% if s.homepage == true %><%= "true" %><% else %><%= "false" %><% end %></td>
+								<% if s.facebook_image == '' || s.facebook_image.blank? %>
+									<td width="10%" class="topperButtons">NO</td>
+								<% else %>
+									<td width="10%" class="topperButtons">YES</td>
+								<% end %>
+								<td width="1%" class="topperButtons"><%= link_to "E", edit_release_path(s), :title => "Edit release - #{s.title}", :class => "btn btn2 tips" %></td>
+								<% if @user.email != @testing %>
+									<td width="1%" class="topperButtons"><%= button_to "X", s, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>
+								<% end %>
+							</tr>
+						<% end %>
+					</table>
+				<% else %>
+					<table width="100%">
+						<tr class="tableRow empty">
+							<td>
+								<em>YOU HAVE NO PLAYLISTS YET... ADD SOME BELOW ?!</em>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h6>
+	<input type="hidden" value="works" class="modal-model-type">
+	<h6><%= link_to 'Add new playlist', new_release_path, :class => "darkButton2" %></h6>
+</div>

@@ -1,0 +1,72 @@
+<div class="canScroll4">
+	<div class="projectInfo">
+		<% if request.referer == "http://localhost:3000/placements" %>
+			<%= link_to '', placements_path, :class => "artistCloseIcon" %>
+		<% elsif request.referer == "https://powerful-basin-1782.herokuapp.com/placements" %>
+			<%= link_to '', placements_path, :class => "artistCloseIcon" %>
+		<% elsif request.referer == "http://splitmusic.co.uk/placements" %>
+			<%= link_to '', placements_path, :class => "artistCloseIcon" %>
+		<% else %>
+			<%= link_to '', news_index_path, :class => "artistCloseIcon" %>
+		<% end %>
+		<h1 class="projectName titleSize1"><%= @work.client %> "<%= @work.title %>"</h1>
+		<h3 class="projectSubtitle fixerSpace descriptionSize1 upcase"><%= @work.type_of_work %></h3>
+		<h3 class="projectSubtitle spacer descriptionSize1 upcase italics"><em>MUSIC - </em><%= @work.artist_name %>: <%= @work.track_name %></h3>
+		<div class="links">
+			<input id="twitter" type="hidden" 
+				data-url="<%= @currentUrl %>"
+				data-media="<%= @work.facebook_image %>"
+				data-description="Split Music | NEW WORK: for <%= @work.client %>" 
+				data-via="FairsplitMusic <% if @work.artist.twitter_name.blank? || @work.artist.twitter_name == '' %><% else %>@<%= @work.artist.twitter_name %><% end %>"
+				data-related="FairsplitMusic"   
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'twitter' }, :class => 'prettySocial fa fa-twitter socialLinks' %>
+			<input id="facebook" type="hidden" 
+				data-url="https://vimeo.com/<%= @work.vimeo %>"
+				data-media="<%= @work.facebook_image %>"
+				data-description="Split Music | NEW WORK: <%= @work.title %> for <%= @work.client %> featuring <%= @work.track_name %> by <%= @work.artist_name + ' ' + @work.artist.fb_url rescue nil %>"
+				data-title="<%= @work.client %> - <%= @work.title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'facebook' }, :class => 'prettySocial fa fa-facebook socialLinks' %>
+			<input id="googleplus" type="hidden" 
+				data-url="https://vimeo.com/<%= @work.vimeo %>"
+				data-media="<%= @work.facebook_image %>"
+				data-description="Split Music | NEW WORK: <%= @work.title %> for <%= @work.client %> featuring <%= @work.track_name %> by <%= @work.artist_name %>"
+				data-title="<%= @work.client %> - <%= @work.title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'googleplus' }, :class => 'prettySocial fa fa-google-plus socialLinks' %>
+			<input id="pinterest" type="hidden" 
+				data-url="https://vimeo.com/<%= @work.vimeo %>" 
+				data-media="<%= @work.facebook_image %>"
+				data-description="Split Music | NEW WORK: <%= @work.title %> for <%= @work.client %> featuring <%= @work.track_name %> by <%= @work.artist_name %>"
+				data-title="<%= @work.client %> - <%= @work.title %>"
+				class="socialLinksHidden"
+			>
+			<%= link_to "", "#", data: { type: 'pinterest' }, :class => 'prettySocial fa fa-pinterest socialLinks' %>
+			<!-- <input id="linkedin" type="hidden" 
+							data-url="<%#= @currentUrl %>" 
+							data-title="Fairsplit Music project" 
+							data-description="Fairsplit Music are deligthed to have recently worked with <%#= @work.client %> on thier new project <%#= @work.title %>."
+							data-via="fairsplitmusic" 
+							data-media="https://s3.amazonaws.com/fairsplit-images/SPLIT_MUSIC_1200_630_all_top_level.jpg" 
+							class="socialLinksHidden"
+						>
+						<%#= link_to "", "#", data: { type: 'linkedin' }, :class => 'prettySocial fa fa-linkedin socialLinks' %> -->
+		</div>
+		<hr class="projectSeparator" />
+		<div class="fitvids">
+			<% if @work.vimeo? %>
+			<div id="videoLoaderWork">
+				<span class="centerer2"></span>
+				<%= image_tag 'status2.gif', :id => "loadingImage2" %>
+			</div>
+        	<iframe id="videoPlayer" src="https://player.vimeo.com/video/<%= @work.vimeo %>?title=0&amp;byline=0&amp;" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<% end %>
+		</div>
+		<% if @work.vimeo? %><hr class="projectSeparator" /><% end %>
+		<% if @work.description? %><p class="projectDetail"><%= simple_format @work.description, :class => "projectDetail descriptionSize1" %></p><% end %>
+	</div>
+</div>

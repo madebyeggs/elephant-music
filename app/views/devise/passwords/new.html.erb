@@ -1,0 +1,29 @@
+<div class="col-md-12">
+	<div class="logo2"><a href="../"><%= image_tag('newLogo.jpg') %></a></div>
+</div>
+
+<div class="col-md-12">
+	<div class="col-md-8 col-sm-offset-2 topper">
+		
+		<h1 class="formHeader">Forgot your password?</h1>
+		<hr class="projectSeparator" />
+	
+		<div class="formWrapper">	
+			<div class="col-md-4">&nbsp;</div>
+			<div class="col-md-4">
+				
+				<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+				  <%= devise_error_messages! %>
+
+				  <div><%= f.label :email, :class => "formLabel" %><br />
+				  <%= f.email_field :email, autofocus: true, :class => "formField" %></div>
+
+				  <div><%= f.submit "Send me reset password instructions", class: "btn" %></div>
+				<% end %>
+
+				<%= render "devise/shared/links" %>
+			</div>
+			<div class="col-md-4">&nbsp;</div>
+		</div>
+	</div>
+</div>

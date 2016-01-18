@@ -1,0 +1,31 @@
+<div class="canScroll3 fadeMe">
+	<div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
+		<% @sounds.each do |s| %>
+			<div class="box col4 wrapping">
+				<div class="element">
+					<div class="images">
+						<div class="">
+							<%= image_tag(s.grid_square_image, :alt => "#{s.title}") %>
+							<div class="overImage"></div>
+						</div>
+						<div class="muteEffects">
+			    			<section class="hidden-infos">
+								<a class="launchAnnouncement"><%= link_to '', release_path(s) %></a>
+				          		<div class="overlay3"></div>
+								<div class="icons4 play"></div>	        					
+							</section>
+				        	<div class="vidTitle">
+								<div class="title-wrap">
+					            	<h3 class="descriptionSize1 upcase"><%= s.title %></h3>
+					          	</div>
+								<div class="subtitle-wrap2">
+				            		<p class="subtitle"><%= truncate(s.description, :length => 260, :class => "descriptionSize1") %></p>
+								</div>
+				        	</div>
+						</div>
+			    	</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>

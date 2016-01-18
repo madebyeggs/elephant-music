@@ -1,0 +1,27 @@
+/* =Isotope
+--------------------------------------------------------------------------------------------------------*/
+.isotope-item { z-index: 2; overflow:hidden }
+.isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
+/**** Isotope CSS3 transitions ****/
+.isotope, .isotope .isotope-item { -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; }
+.isotope { -webkit-transition-property: height, width; -moz-transition-property: height, width; -ms-transition-property: height, width; -o-transition-property: height, width; transition-property: height, width; }
+.isotope .isotope-item { -webkit-transition-property: -webkit-transform, opacity; -moz-transition-property:    -moz-transform, opacity; -ms-transition-property:     -ms-transform, opacity; -o-transition-property:         top, left, opacity; transition-property:         transform, opacity; }
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition { -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -ms-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; }
+/* End: Recommended Isotope styles */
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling { -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none; }
+
+#options { width:100%; z-index:300; position:absolute; top:70px; }
+#options ul { margin: 0; list-style: none; display:block; width:100%  }
+#options.right ul {float:right; width:auto; display:inline-block }
+#options li { cursor:pointer; }
+#options.right li {float:left; margin-left:34px; }
+#options li a { color:#8d8d8d; font-family: "Open Sans", Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; text-decoration:none; text-transform:uppercase; display:inline-block; padding:0px; margin:0px; }
+#options li.alignleft { margin-right:34px; }
+#options li.alignright { margin-left:34px; }
+#options li a.selected, #options li:hover a { color:#2b2b2b; /*border-bottom:1px solid #555;*/ }
+.menu-line {width:0; height:1px; background:#555; display:block }
+/* End Isotope
+--------------------------------------------------------------------------------------------------------*/

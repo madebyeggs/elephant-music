@@ -1,0 +1,116 @@
+<div class="cmsWrapper">
+	<div class="releases">
+		<div class="divHeader">Social network images (for site index pages)</div>
+		<div class="tableWrapper">
+			<div class="tableContent">
+				<% if @socials.count > 0 %>
+					<table width="100%">
+						<tr class="tableHeader">
+							<th>CATEGORY</th>
+							<th>IMAGE PRESENT?</th>
+							<th>IMAGE NAME</th>
+						</tr>
+						<tr><hr class="ruler"/></tr>
+						<% @socials.each do |s| %>
+							<tr class="tableRow">
+								<td width="15%">NEWS</td>
+								<td width="30%">
+									<% if s.announcements_image? %>YES<% else %>NO<% end %>
+								</td>
+								<td width="55%">
+									<% if s.announcements_image? %>
+										<%= s.announcements_image_file_name %>
+									<% else %>
+										"N/A"
+									<% end %>
+								</td>
+							</tr>
+							<tr class="tableRow">
+								<td width="15%">WORKS</td>
+								<td width="30%">
+									<% if s.works_image? %>YES<% else %>NO<% end %>
+								</td>
+								<td width="55%">
+									<% if s.works_image? %>
+										<%= s.works_image_file_name %>
+									<% else %>
+										"N/A"
+									<% end %>
+								</td>
+							</tr>
+							<tr class="tableRow">
+								<td width="15%">ARTISTS</td>
+								<td width="30%">
+									<% if s.artists_image? %>YES<% else %>NO<% end %>
+								</td>
+								<td width="55%">
+									<% if s.artists_image? %>
+										<%= s.artists_image_file_name %>
+									<% else %>
+										"N/A"
+									<% end %>
+								</td>
+							</tr>
+							<tr class="tableRow">
+								<td width="15%">PLAYLISTS</td>
+								<td width="30%">
+									<% if s.playlists_image? %>YES<% else %>NO<% end %>
+								</td>
+								<td width="55%">
+									<% if s.playlists_image? %>
+										<%= s.playlists_image_file_name %>
+									<% else %>
+										"N/A"
+									<% end %>
+								</td>
+							</tr>
+							<tr class="tableRow">
+								<td width="15%">ABOUT</td>
+								<td width="30%">
+									<% if s.abouts_image? %>YES<% else %>NO<% end %>
+								</td>
+								<td width="55%">
+									<% if s.abouts_image? %>
+										<%= s.abouts_image_file_name %>
+									<% else %>
+										"N/A"
+									<% end %>
+								</td>
+							</tr>
+							<tr class="tableRow">
+								<td width="15%">CONTACT</td>
+								<td width="30%">
+									<% if s.contacts_image? %>YES<% else %>NO<% end %>
+								</td>
+								<td width="55%">
+									<% if s.contacts_image? %>
+										<%= s.contacts_image_file_name %>
+									<% else %>
+										"N/A"
+									<% end %>
+								</td>
+							</tr>
+							<tr class="tableRow topperMargin2">
+								<td width="15%" class="topperButtons"><%= link_to "Edit social images", edit_social_path(s), :title => "Edit social images",:class => "btn btn2 tips" %></td>
+								<% if @user.email != @testing %>
+									<td width="30%" class="topperButtons"><%= button_to "Delete social images", s, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>
+								<% end %>
+							</tr>
+						<% end %>
+					</table>
+				<% else %>
+					<table width="100%">
+						<tr class="tableRow empty">
+							<td>
+								<em>YOU HAVE NO IMAGES YET... ADD THEM BELOW ?!</em>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h6>
+	<input type="hidden" value="works" class="modal-model-type">
+	<% if @socials.count < 1 %><h6><%= link_to 'Add social record', new_social_path, :class => "darkButton2" %><% end %></h6>
+</div>

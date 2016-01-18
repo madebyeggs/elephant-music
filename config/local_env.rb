@@ -1,0 +1,4 @@
+ENV['BITLY_USER'] = 'madebyeggs'
+ENV['BITLY_PASS'] = 'R_9c183444d0d0432080764669badaf26a'
+ENV['BITLY_USER'] = 'madebyeggs'
+ENV['BITLY_PASS'] = 'R_9c183444d0d0432080764669badaf26a'

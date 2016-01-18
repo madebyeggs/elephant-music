@@ -1,0 +1,63 @@
+<div class="cmsWrapper">
+	<div class="releases">
+		<div class="divHeader">Artists</div>
+		<div class="tableWrapper">
+			<div class="tableContent">
+				<% if @artists.count > 0 %>
+					<table width="100%">
+						<tr class="tableHeader">
+							<th>NAME</th>
+							<th>INFO</th>
+							<th>LATEST</th>
+							<th>HOME</th>
+							<th>S'CLOUD</th>
+							<th>FB IMAGE</th>
+							<th>FB URL</th>
+							<th>TWIT. URL</th>
+						</tr>
+						<tr><hr class="ruler"/></tr>
+						<% @artists.each do |a| %>
+							<tr class="tableRow">
+								<td width="20%"><%= truncate(a.name, :length => 20) %></td>
+								<td width="26%"><%= truncate(a.description, :length => 26) %></td>
+								<td width="7%"><%= a.latest %></td>
+								<td width="7%"><% if a.homepage == true %><%= "true" %><% else %><%= "false" %><% end %></td>
+								<td width="13%"><%= a.soundcloud %></td>
+								<% if a.facebook_image == '' || a.facebook_image.blank? %>
+									<td width="8%" class="topperButtons">NO</td>
+								<% else %>
+									<td width="8%" class="topperButtons">YES</td>
+								<% end %>
+								<% if a.fb_url == '' || a.fb_url.blank? %>
+									<td width="8%" class="topperButtons">NO</td>
+								<% else %>
+									<td width="8%" class="topperButtons">YES</td>
+								<% end %>
+								<% if a.twitter_name == '' || a.twitter_name.blank? %>
+									<td width="8%" class="topperButtons">NO</td>
+								<% else %>
+									<td width="8%" class="topperButtons">YES</td>
+								<% end %>
+								<td width="1%" class="topperButtons"><%= link_to "E", edit_artist_path(a), :title => "Edit #{a.name}",:class => "btn btn2 tips" %></td>
+								<% if @user.email != @testing %>
+									<td width="1%" class="topperButtons"><%= button_to "X", a, :method => :delete, :class => "btn btn3 delete_post", :remote => true %></td>
+								<% end %>
+							</tr>
+						<% end %>
+					</table>
+				<% else %>
+					<table width="100%">
+						<tr class="tableRow empty">
+							<td>
+								<em>YOU HAVE NO ARTIST YET... ADD SOME BELOW ?!</em>
+							</td>
+						</tr>
+					</table>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<h6>
+	<input type="hidden" value="works" class="modal-model-type">
+	<h6><%= link_to 'Add artist', new_artist_path, :class => "darkButton2" %></h6>
+</div>
