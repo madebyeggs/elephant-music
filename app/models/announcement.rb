@@ -22,7 +22,7 @@ class Announcement < ActiveRecord::Base
       :access_key_id => ENV['S3_KEY'],
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
-      :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
+      :s3_host_alias => 'd2gtajjeesejrd.d2pp9e1d3np2k1.cloudfront.net.net', 
       :bucket => 'elephant-music',
       :path => "announcements/images/:id_partition/:style/:filename"
     end
@@ -38,7 +38,7 @@ class Announcement < ActiveRecord::Base
       :access_key_id => ENV['S3_KEY'],
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
-      :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
+      :s3_host_alias => 'd2gtajjeesejrd.d2pp9e1d3np2k1.cloudfront.net.net', 
       :bucket => 'elephant-music',
       :path => "announcements/square_images/:id_partition/:style/:filename"
     end
@@ -54,7 +54,7 @@ class Announcement < ActiveRecord::Base
       :access_key_id => ENV['S3_KEY'],
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
-      :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
+      :s3_host_alias => 'd2gtajjeesejrd.d2pp9e1d3np2k1.cloudfront.net.net', 
       :bucket => 'elephant-music',
       :path => "announcements/large_images/:id_partition/:style/:filename"
     end
@@ -70,7 +70,7 @@ class Announcement < ActiveRecord::Base
       :access_key_id => ENV['S3_KEY'],
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
-      :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
+      :s3_host_alias => 'd2gtajjeesejrd.d2pp9e1d3np2k1.cloudfront.net.net', 
       :bucket => 'elephant-music',
       :path => "announcements/facebook_images/:id_partition/:style/:filename"
     end
