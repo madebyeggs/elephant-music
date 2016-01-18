@@ -14,7 +14,7 @@ class Social < ActiveRecord::Base
     :secret_access_key => ENV['S3_SECRET'] },
     :url => ':s3_alias_url',
     :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-    :bucket => 'fairsplit-images',
+    :bucket => 'elephant-music',
     :path => "socials/images/:id_partition/:style/:filename"
   end
   
@@ -33,7 +33,7 @@ class Social < ActiveRecord::Base
     :secret_access_key => ENV['S3_SECRET'] },
     :url => ':s3_alias_url',
     :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-    :bucket => 'fairsplit-images',
+    :bucket => 'elephant-music',
     :path => "socials/images/:id_partition/:style/:filename"
   end
   
@@ -52,7 +52,7 @@ class Social < ActiveRecord::Base
     :secret_access_key => ENV['S3_SECRET'] },
     :url => ':s3_alias_url',
     :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-    :bucket => 'fairsplit-images',
+    :bucket => 'elephant-music',
     :path => "socials/images/:id_partition/:style/:filename"
   end
   
@@ -71,7 +71,7 @@ class Social < ActiveRecord::Base
     :secret_access_key => ENV['S3_SECRET'] },
     :url => ':s3_alias_url',
     :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-    :bucket => 'fairsplit-images',
+    :bucket => 'elephant-music',
     :path => "socials/images/:id_partition/:style/:filename"
   end
   
@@ -90,7 +90,7 @@ class Social < ActiveRecord::Base
     :secret_access_key => ENV['S3_SECRET'] },
     :url => ':s3_alias_url',
     :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-    :bucket => 'fairsplit-images',
+    :bucket => 'elephant-music',
     :path => "socials/images/:id_partition/:style/:filename"
   end
   
@@ -109,7 +109,7 @@ class Social < ActiveRecord::Base
     :secret_access_key => ENV['S3_SECRET'] },
     :url => ':s3_alias_url',
     :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-    :bucket => 'fairsplit-images',
+    :bucket => 'elephant-music',
     :path => "socials/images/:id_partition/:style/:filename"
   end
   

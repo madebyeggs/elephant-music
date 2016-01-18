@@ -23,7 +23,7 @@ class Sound < ActiveRecord::Base
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
       :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-      :bucket => 'fairsplit-images',
+      :bucket => 'elephant-music',
       :path => "sounds/images/:id_partition/:style/:filename"
     end
     
@@ -39,7 +39,7 @@ class Sound < ActiveRecord::Base
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
       :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-      :bucket => 'fairsplit-images',
+      :bucket => 'elephant-music',
       :path => "sounds/grid_square_images/:id_partition/:style/:filename"
     end
     
@@ -55,7 +55,7 @@ class Sound < ActiveRecord::Base
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
       :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-      :bucket => 'fairsplit-images',
+      :bucket => 'elephant-music',
       :path => "sounds/large_images/:id_partition/:style/:filename"
     end
     
@@ -71,7 +71,7 @@ class Sound < ActiveRecord::Base
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
       :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-      :bucket => 'fairsplit-images',
+      :bucket => 'elephant-music',
       :path => "sounds/facebook_images/:id_partition/:style/:filename"
     end
     

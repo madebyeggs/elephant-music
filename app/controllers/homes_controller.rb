@@ -27,14 +27,14 @@ class HomesController < ApplicationController
       set_meta_tags :og => {
         :title    => 'Fairsplit Music | Sync focussed music publishing for the 21st Century',
         :url      => 'http://fairsplitmusic.com/artists',
-        :image    => 'https://s3.amazonaws.com/fairsplit-images/SPLIT_MUSIC_1200_630_all_top_level.jpg'
+        :image    => 'https://s3.amazonaws.com/elephant-music/SPLIT_MUSIC_1200_630_all_top_level.jpg'
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
         site: "@fairsplitmusic",
         title: "Fairsplit music's Artists",
         description: "The home for all of Fairsplit's artists",
-        image: "https://s3.amazonaws.com/fairsplit-images/SPLIT_MUSIC_1200_630_all_top_level.jpg"
+        image: "https://s3.amazonaws.com/elephant-music/SPLIT_MUSIC_1200_630_all_top_level.jpg"
       }
     end
 

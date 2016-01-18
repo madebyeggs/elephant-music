@@ -25,7 +25,7 @@ class Work < ActiveRecord::Base
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
       :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-      :bucket => 'fairsplit-images',
+      :bucket => 'elephant-music',
       :path => "works/images/:id_partition/:style/:filename"
     end
     
@@ -41,7 +41,7 @@ class Work < ActiveRecord::Base
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
       :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-      :bucket => 'fairsplit-images',
+      :bucket => 'elephant-music',
       :path => "works/grid_square_images/:id_partition/:style/:filename"
     end
     
@@ -57,7 +57,7 @@ class Work < ActiveRecord::Base
       :secret_access_key => ENV['S3_SECRET'] },
       :url => ':s3_alias_url',
       :s3_host_alias => 'd2gtajjeesejrd.cloudfront.net', 
-      :bucket => 'fairsplit-images',
+      :bucket => 'elephant-music',
       :path => "works/facebook_images/:id_partition/:style/:filename"
     end
     
