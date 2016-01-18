@@ -23,14 +23,14 @@ class WorksController < ApplicationController
         image: "#{@work.facebook_image}",
         url: "https://player.vimeo.com/video/#{@work.vimeo}",
         title: "#{@work.client}" + " " + "#{@work.client}",
-        description: "Split Music | NEW WORK: #{@work.title}" + " " + "for" + " " + "#{@work.client}" + " " + "featuring" + " " + "#{@work.track_name}" + " " + "by" + " " + "#{@work.artist_name}",
+        description: "Elephant Music | NEW WORK: #{@work.title}" + " " + "for" + " " + "#{@work.client}" + " " + "featuring" + " " + "#{@work.track_name}" + " " + "by" + " " + "#{@work.artist_name}",
         type: "video.other"
       }
       set_meta_tags twitter: {
         card: "player",
-        site: "@fairsplitmusic",
+        site: "@Elephant__Music",
         title: "#{@work.client}" + " " + "#{@work.client}",
-        description: "Split Music | NEW WORK: #{@work.title}" + " " + "for" + " " + "#{@work.client}" + " " + "featuring" + " " + "#{@work.track_name}" + " " + "by" + " " + "#{@work.artist_name}",
+        description: "Elephant Music | NEW WORK: #{@work.title}" + " " + "for" + " " + "#{@work.client}" + " " + "featuring" + " " + "#{@work.track_name}" + " " + "by" + " " + "#{@work.artist_name}",
         player: {
           _:      "https://player.vimeo.com/video/#{@work.vimeo}",
           stream: "https://player.vimeo.com/video/#{@work.vimeo}"
@@ -43,14 +43,14 @@ class WorksController < ApplicationController
       @works = Work.common_order
       set_meta_tags :og => {
         :url => "#{@currentUrl}",
-        :title    => 'Split Music | Work',
+        :title    => 'Elephant Music | Work',
         :image    => "#{@social.works_image}",
         :description => "21st Century Music Publishing | Unique Music to Picture"
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@fairsplitmusic",
-        title: "Split Music | Work",
+        site: "@Elephant__Music",
+        title: "Elephant Music | Work",
         description: "21st Century Music Publishing | Unique Music to Picture",
         image: "#{@social.works_image}"
       }

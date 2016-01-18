@@ -28,7 +28,7 @@ class SoundsController < ApplicationController
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@fairsplitmusic",
+        site: "@Elephant__Music",
         title: "#{@sound.title}",
         description: "#{@sound.description}",
         image: "#{@sound.facebook_image}"
@@ -41,14 +41,14 @@ class SoundsController < ApplicationController
       @sounds = Sound.common_order
       set_meta_tags :og => {
         :url => "#{@currentUrl}",
-        :title    => 'Split Music | Listen',
+        :title    => 'Elephant Music | Listen',
         :image    => "#{@social.playlists_image}",
         :description => '21st Century Music Publishing | Unique Music to Picture'
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@FairsplitMusic",
-        title: "Split Music | Listen",
+        site: "@Elephant__Music",
+        title: "Elephant Music | Listen",
         description: "21st Century Music Publishing | Unique Music to Picture",
         image: "#{@social.playlists_image}"
       }

@@ -2,9 +2,9 @@
 	<div class="projectInfo">
 		<% if request.referer == "http://localhost:3000/artists" %>
 			<%= link_to '', artists_path, :class => "artistCloseIcon" %>
-		<% elsif request.referer == "https://powerful-basin-1782.herokuapp.com/artists" %>
+		<% elsif request.referer == "https://intense-reef-2507.herokuapp.com/artists" %>
 			<%= link_to '', artists_path, :class => "artistCloseIcon" %>
-		<% elsif request.referer == "http://splitmusic.co.uk/artists" %>
+		<% elsif request.referer == "http://elephantmusic.net/artists" %>
 			<%= link_to '', artists_path, :class => "artistCloseIcon" %>
 		<% else %>
 			<%= link_to '', news_index_path, :class => "artistCloseIcon" %>
@@ -15,8 +15,8 @@
 				data-url="<%= @currentUrl %>"
 				data-media="<%= @artist.facebook_image %>"
 				data-description="<%= truncate(@artist.description, :length => 50) %>" 
-				data-via="FairsplitMusic <% if @artist.twitter_name.blank? || @artist.twitter_name == '' %><% else %>@<%= @artist.twitter_name %><% end %>"
-				data-related="FairsplitMusic"   
+				data-via="Elephant__Music <% if @artist.twitter_name.blank? || @artist.twitter_name == '' %><% else %>@<%= @artist.twitter_name %><% end %>"
+				data-related="Elephant__Music"   
 				class="socialLinksHidden"
 			>
 			<%= link_to "", "#", data: { type: 'twitter' }, :class => 'prettySocial fa fa-twitter socialLinks' %>
@@ -46,9 +46,9 @@
 			<%= link_to "", "#", data: { type: 'pinterest' }, :class => 'prettySocial fa fa-pinterest socialLinks' %>
 			<!-- <input id="linkedin" type="hidden" 
 							data-url="<%#= @currentUrl %>" 
-							data-title="Fairsplit Music project" 
-							data-description="Fairsplit Music are deligthed to have recently worked with <%#= @work.client %> on thier new project <%#= @work.title %>."
-							data-via="fairsplitmusic" 
+							data-title="Elephant Music project" 
+							data-description="Elephant Music are deligthed to have recently worked with <%#= @work.client %> on thier new project <%#= @work.title %>."
+							data-via="Elephant__Music" 
 							data-media="https://s3.amazonaws.com/elephant-music/SPLIT_MUSIC_1200_630_all_top_level.jpg" 
 							class="socialLinksHidden"
 						>

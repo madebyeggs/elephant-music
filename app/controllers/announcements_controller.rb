@@ -28,7 +28,7 @@ class AnnouncementsController < ApplicationController
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@fairsplitmusic",
+        site: "@Elephant__Music",
         title: "#{@announcement.homepage_title}",
         description: "#{@announcement.description}",
         image: "#{@announcement.facebook_image}"
@@ -39,13 +39,13 @@ class AnnouncementsController < ApplicationController
       bring_in_models
       set_meta_tags :og => {
         :url => "#{@currentUrl}",
-        :title    => 'Split Music',
+        :title    => 'Elephant Music',
         :image    => "#{@social.announcements_image}",
         :description => "21st Century Music Publishing | Unique Music to Picture"
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@FairsplitMusic",
+        site: "@Elephant__Music",
         title: "21st Century Music Publishing | Unique Music to Picture",
         description: "21st Century Music Publishing | Unique Music to Picture",
         image: "#{@social.announcements_image}"

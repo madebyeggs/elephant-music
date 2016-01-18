@@ -23,15 +23,15 @@ class AboutsController < ApplicationController
       @about = About.first
       bring_in_models
       set_meta_tags :og => {
-        :title    => 'Split Music | About',
+        :title    => 'Elephant Music | About',
         :url      => "#{@currentUrl}",
         :description      => "#{@about.description}",
         :image    => "#{@social.abouts_image}"
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@fairsplitmusic",
-        title: "Split Music | About",
+        site: "@Elephant__Music",
+        title: "Elephant Music | About",
         description: "21st Century Music Publishing | Unique Music to Picture",
         image: "#{@social.abouts_image}"
       }

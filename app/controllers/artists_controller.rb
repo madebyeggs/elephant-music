@@ -28,7 +28,7 @@ class ArtistsController < ApplicationController
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@fairsplitmusic",
+        site: "@Elephant__Music",
         title: "#{@artist.name}",
         description: "#{@artist.description}",
         image: "#{@artist.facebook_image}"
@@ -41,14 +41,14 @@ class ArtistsController < ApplicationController
       @artists = Artist.common_order
       set_meta_tags :og => {
         :url => "#{@currentUrl}",
-        :title    => 'Split Music | Artists',
+        :title    => 'Elephant Music | Artists',
         :image    => "#{@social.artists_image}",
         :description => '21st Century Music Publishing | Unique Music to Picture'
       }
       set_meta_tags twitter: {
         card: "summary_large_image",
-        site: "@fairsplitmusic",
-        title: "Split Music | Artists",
+        site: "@Elephant__Music",
+        title: "Elephant Music | Artists",
         description: "21st Century Music Publishing | Unique Music to Picture",
         image: "#{@social.artists_image}"
       }

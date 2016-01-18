@@ -4,16 +4,16 @@ class ContactsController < ApplicationController
   def index
     bring_in_models
     set_meta_tags :og => {
-      :title    => 'Split Music | Contact',
+      :title    => 'Elephant Music | Contact',
       :url      => "#{@currentUrl}",
-      :description      => "Split Music | London HQ",
+      :description      => "Elephant Music | London HQ",
       :image    => "#{@social.contacts_image}"
     }
     set_meta_tags twitter: {
       card: "summary_large_image",
-      site: "@fairsplitmusic",
-      title: "Split Music | Contact",
-      description: "Split Music | London HQ",
+      site: "@Elephant__Music",
+      title: "Elephant Music | Contact",
+      description: "Elephant Music | London HQ",
       image: "#{@social.contacts_image}"
     }
   end
