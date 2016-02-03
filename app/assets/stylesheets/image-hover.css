@@ -39,10 +39,10 @@
 .title-wrap h3, .title-wrap2 h3 {font-size:14px; letter-spacing:1px; text-transform:uppercase;text-align:left}
 .subtitle-wrap p {font-size:12px; font-weight:400;font-family:'Raleway';font-style:none;margin-top:12px;text-transform:none;text-align:left;}
 .subtitle-wrap {margin-top:-22px!important;width:110%;}
-.subtitle-wrap2 p, .subtitle-wrap3 p {font-size:12px; font-weight:400;font-family:'Raleway';font-style:none;margin-top:22px;text-transform:none;overflow:visible;white-space:normal;text-align:justify;}
-.subtitle-wrap2 {margin-top:-20px!important;width:90%;}
+.subtitle-wrap2 p, .subtitle-wrap3 p {font-size:12px; font-weight:400;font-family:'Raleway';font-style:none;margin-top:22px;text-transform:none;overflow:visible;white-space:normal;text-align:left;}
+.subtitle-wrap2 {margin-top:-20px!important;width:100%;}
 .subtitle-wrap3 {margin-top:-20px!important;width:120%;}
-.title-wrap, .subtitle-wrap {width:90%!important;}
+.title-wrap, {width:100%;padding-right:30px;}
 .middleFixer {text-transform:uppercase!important;margin-top:50%!important;}
 .title-wrap h3 {overflow:visible;white-space:normal;}
 .title-wrap2 {margin-top:-22px;margin-bottom:-30px!important;}
