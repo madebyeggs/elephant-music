@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ 	xmlns:o="urn:schemas-microsoft-com:office:office"
+ 	xmlns:x="urn:schemas-microsoft-com:office:excel"
+ 	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ 	xmlns:html="http://www.w3.org/TR/REC-html40">
+	<OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  		<AllowPNG/>
+ 	</OfficeDocumentSettings>
+ 	<Worksheet ss:Name="Sheet1">
+  		<Table>
+   			<Row>
+				<Cell><Data ss:Type="String">ID</Data></Cell>
+    			<Cell><Data ss:Type="String">TITLE</Data></Cell>
+    			<Cell><Data ss:Type="String">CLIENT</Data></Cell>
+    			<Cell><Data ss:Type="String">TYPE OF WORK</Data></Cell>
+    			<Cell><Data ss:Type="String">TRACK NAME</Data></Cell>
+    			<Cell><Data ss:Type="String">VIMEO UNIQUE IDENTIFIER</Data></Cell>
+    			<Cell><Data ss:Type="String">DESCRIPTION</Data></Cell>
+				<Cell><Data ss:Type="String">GRID SQUARE IMAGE NAME(400X400)</Data></Cell>
+				<Cell><Data ss:Type="String">GRID SQUARE IMAGE LOCATION</Data></Cell>
+				<Cell><Data ss:Type="String">HOME IMAGE NAME(710X210)</Data></Cell>
+				<Cell><Data ss:Type="String">GRID SQUARE IMAGE LOCATION</Data></Cell>
+				<Cell><Data ss:Type="String">FACEBOOK IMAGE NAME(1200X2630)</Data></Cell>
+				<Cell><Data ss:Type="String">FACEBOOK IMAGE LOCATION</Data></Cell>
+   			</Row>
+			<% @works.each do |work| %>
+     			<Row>
+					<Cell><Data ss:Type="String"><%= work.id %></Data></Cell>
+       				<Cell><Data ss:Type="String"><%= work.title %></Data></Cell>
+       				<Cell><Data ss:Type="String"><%= work.client %></Data></Cell>
+       				<Cell><Data ss:Type="String"><%= work.type_of_work %></Data></Cell>
+       				<Cell><Data ss:Type="String"><%= work.track_name %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.vimeo %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.description %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.grid_square_image_file_name %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.grid_square_image %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.image_file_name %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.image %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.facebook_image_file_name %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.facebook_image %></Data></Cell>
+     			</Row>
+   			<% end %>
+  		</Table>
+ 	</Worksheet>
+</Workbook>

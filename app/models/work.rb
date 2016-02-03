@@ -88,4 +88,13 @@ class Work < ActiveRecord::Base
     def self.homepage
       where(:homepage => true)
     end
+    
+    def self.to_csv(options = {})
+      CSV.generate(options) do |csv|
+        csv << column_names
+        all.each do |work|
+          csv << work.attributes.values_at(*column_names)
+        end
+      end
+    end
 end

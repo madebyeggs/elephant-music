@@ -11,6 +11,19 @@ a {
   text-decoration:none!important;
 }
 
+@font-face {
+    font-family: 'scapescape';
+    src: url('scape_copy-webfont.eot');
+    src: url('scape_copy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('scape_copy-webfont.woff2') format('woff2'),
+         url('scape_copy-webfont.woff') format('woff'),
+         url('scape_copy-webfont.ttf') format('truetype'),
+         url('scape_copy-webfont.svg#scapescape') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .pipe {font-weight:700;margin:0px 8px 0px 4px;color:#ffffff;}
 
 
@@ -59,9 +72,9 @@ a {
 .logo img {max-width:100%;margin:0 auto;}
 ul.navigation {list-style-type: none;}
 .navigationWrapper {width:193px;margin:80px auto!important;}
-.navigation a, .client {text-transform:uppercase;font-size:1.1em!important;color:#ffffff;font-family:'Amatic SC';}
+.navigation a, .client {text-transform:uppercase;font-size:1.1em!important;color:#ffffff;font-family:'scapescape';}
 li.navButton {margin:8px 0px 8px 0px!important;}
-.social {width:168px;margin:100px auto 0px auto;}
+.social {width:115.3px;margin:100px auto 0px auto;}
 .centerSocial {margin:0 auto;}
 .client {position:absolute;margin:240px 0px 0px 80%;font-family:'Raleway'}
 

@@ -11,8 +11,9 @@
 		<div class="logo"><%= link_to(image_tag('newLogo.jpg', class: "logo"), news_index_path) %></div>
 		<div class="navigationWrapper">
 			<ul id="menu" class="navigation option-set clearfix">
-				<li class="navButton"><%= link_to 'Artists', artists_path, :class => "navigationButton" %></li>
-				<li class="navButton"><%= link_to 'Releases', releases_path, :class => "navigationButton" %></li>
+				<!-- <li class="navButton"><%#= link_to 'Artists', artists_path, :class => "navigationButton" %></li> -->
+				<!-- <li class="navButton"><%#= link_to 'Releases', releases_path, :class => "navigationButton" %></li> -->
+				<li class="navButton"><%= link_to 'News', news_index_path, :class => "navigationButton" %></li>
 				<li class="navButton"><%= link_to 'Placements', placements_path, :class => "navigationButton" %></li>
 				<!-- <li class="navButton"><%#= link_to 'About', abouts_path, :class => "navigationButton" %></li> -->
 				<li class="navButton"><%= link_to 'Contact', contacts_path, :class => "navigationButton" %></li>
@@ -29,12 +30,12 @@
 				<a href="https://www.instagram.com/vikramgudi/" target="_blank">
 					<i class="fa fa-instagram fa-lg"></i>
 				</a>
-				<a href="https://www.youtube.com/channel/UCcjbocHGR4WaSlrkqSfbwBg" target="_blank">
-					<i class="fa fa-youtube fa-lg"></i>
-				</a>
-				<a href="https://soundcloud.com/fairsplit-music" target="_blank">
-					<i class="fa fa-soundcloud"></i>
-				</a>
+				<!-- 				<a href="https://www.youtube.com/channel/UCcjbocHGR4WaSlrkqSfbwBg" target="_blank">
+									<i class="fa fa-youtube fa-lg"></i>
+								</a>
+								<a href="https://soundcloud.com/fairsplit-music" target="_blank">
+									<i class="fa fa-soundcloud"></i>
+								</a> -->
 				<span class="pipe">|</span> 
 				<a class="fixMute" href="#filter=.contact">
 					<i class="fa fa-envelope-o fa-lg"></i>

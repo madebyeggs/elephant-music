@@ -10,7 +10,8 @@
 .btn:active {background-color:#668B8B;color:#d3d3d3;}
 .formMessage {color:#919191;}
 .signIn {text-transform:uppercase;margin:0px 10px;}
-.userInfo {width:270px;margin:-120px auto 0px auto;padding-left:17px;font-size:14px;color:#ffffff;font-style:italic;}
+.userInfo {width:300px;margin:-100px auto 0px auto;padding-left:17px;font-size:14px;color:#ffffff;font-family:"Raleway"!important;font-style:italic;}
+.userInfo a {font-family:"Raleway"!important;}
 
 a:hover {
 	text-decoration:none;
@@ -26,6 +27,7 @@ a:hover {
 	border-radius:8px;
 }
 .cmsWrapper2{margin-bottom:50px;}
+.contactCMS{margin:70px 0px 0px 0px;}
 .releases {float:left;clear:both;text-align:left;width:100%;margin:-25px 0px 0px 0px;}
 .divHeader {font-color:#000000;font-family:"Open Sans", helvetica, sans-serif;font-size:1.2em;text-transform:uppercase;letter-spacing:0.10em;font-weight:400;margin:20px 0px 24px 0px;border-bottom:1px solid black;padding:0px 0px 8px 0px;}
 .tableWrapper {
