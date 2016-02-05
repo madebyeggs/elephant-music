@@ -20,7 +20,7 @@
 						<% @works.each do |work| %>
 						<% artist_name = work.artist.name rescue "NONE" %>
 							<tr class="tableRow">
-								<td width="10%"><%= truncate(work.brand, :length => 10 %></td>
+								<td width="10%"><%= truncate(work.brand, :length => 10) %></td>
 								<td width="22%"><%= truncate(work.title, :length => 20) %></td>
 								<td width="22%"><%= truncate(work.client, :length => 20) %></td>
 								<% if work.description.blank? || work.description == '' %>
