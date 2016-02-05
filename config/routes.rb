@@ -4,7 +4,9 @@ V1::Application.routes.draw do
   root :to => 'announcements#index'
   
   resources :cms
-  resources :works
+  resources :works do
+    collection { post :import }
+  end
   resources :placements, :controller=>"works"
   resources :news, :controller=>"announcements"
   resources :announcements

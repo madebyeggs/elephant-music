@@ -84,5 +84,10 @@ class WorksController < ApplicationController
         format.html { redirect_to cms_path }
       end
     end
+    
+    def import
+      Work.import(params[:file])
+      redirect_to cms_path
+    end
 
 end
