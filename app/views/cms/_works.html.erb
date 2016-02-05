@@ -13,16 +13,16 @@
 							<th>VIMEO</th>
 							<th>LATEST</th>
 							<th>HOME</th>
-							<th>ARTIST</th>
+							<!-- <th>ARTIST</th> -->
 							<th>FB IMAGE</th>
 						</tr>
 						<tr><hr class="ruler"/></tr>
 						<% @works.each do |work| %>
 						<% artist_name = work.artist.name rescue "NONE" %>
 							<tr class="tableRow">
-								<td width="10%"><%= truncate(work.brand, :length => 10) %></td>
-								<td width="22%"><%= truncate(work.title, :length => 20) %></td>
-								<td width="22%"><%= truncate(work.client, :length => 20) %></td>
+								<td width="14%"><%= truncate(work.brand, :length => 16) %></td>
+								<td width="25%"><%= truncate(work.title, :length => 25) %></td>
+								<td width="25%"><%= truncate(work.client, :length => 25) %></td>
 								<% if work.description.blank? || work.description == '' %>
 									<td width="6%">NO</td>
 								<% else %>
@@ -31,7 +31,7 @@
 								<td width="8%"><%= work.vimeo %></td>
 								<td width="6%"><%= work.latest %></td>
 								<td width="6%"><% if work.homepage == true %><%= "true" %><% else %><%= "false" %><% end %></td>
-								<td width="10%"><%= truncate(artist_name, :length => 11) %></td>
+								<!-- <td width="10%"><%#= truncate(artist_name, :length => 11) %></td> -->
 								<% if work.facebook_image == '' || work.facebook_image.blank? %>
 									<td width="8%" class="topperButtons">NO</td>
 								<% else %>
