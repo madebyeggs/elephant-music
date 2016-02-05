@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20160112101822) do
+ActiveRecord::Schema.define(:version => 20160205110100) do
 
   create_table "abouts", :force => true do |t|
     t.string   "title"
@@ -246,6 +246,7 @@ ActiveRecord::Schema.define(:version => 20160112101822) do
     t.string   "grid_square_image_content_type"
     t.integer  "grid_square_image_file_size"
     t.datetime "grid_square_image_updated_at"
+    t.string   "brand"
   end
 
   add_index "works", ["slug"], :name => "index_works_on_slug"
