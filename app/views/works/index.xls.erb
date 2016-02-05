@@ -11,12 +11,15 @@
   		<Table>
    			<Row>
 				<Cell><Data ss:Type="String">ID</Data></Cell>
+				<Cell><Data ss:Type="String">BRAND</Data></Cell>
     			<Cell><Data ss:Type="String">TITLE</Data></Cell>
     			<Cell><Data ss:Type="String">CLIENT</Data></Cell>
     			<Cell><Data ss:Type="String">TYPE OF WORK</Data></Cell>
+				<Cell><Data ss:Type="String">ARTIST NAME</Data></Cell>
     			<Cell><Data ss:Type="String">TRACK NAME</Data></Cell>
     			<Cell><Data ss:Type="String">VIMEO UNIQUE IDENTIFIER</Data></Cell>
     			<Cell><Data ss:Type="String">DESCRIPTION</Data></Cell>
+				<Cell><Data ss:Type="String">ON HOMEPAGE?</Data></Cell>
 				<Cell><Data ss:Type="String">GRID SQUARE IMAGE NAME(400X400)</Data></Cell>
 				<Cell><Data ss:Type="String">GRID SQUARE IMAGE LOCATION</Data></Cell>
 				<Cell><Data ss:Type="String">HOME IMAGE NAME(710X210)</Data></Cell>
@@ -27,12 +30,15 @@
 			<% @works.each do |work| %>
      			<Row>
 					<Cell><Data ss:Type="String"><%= work.id %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.brand %></Data></Cell>
        				<Cell><Data ss:Type="String"><%= work.title %></Data></Cell>
        				<Cell><Data ss:Type="String"><%= work.client %></Data></Cell>
        				<Cell><Data ss:Type="String"><%= work.type_of_work %></Data></Cell>
+       				<Cell><Data ss:Type="String"><%= work.artist_name %></Data></Cell>
        				<Cell><Data ss:Type="String"><%= work.track_name %></Data></Cell>
 					<Cell><Data ss:Type="String"><%= work.vimeo %></Data></Cell>
 					<Cell><Data ss:Type="String"><%= work.description %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= work.homepage %></Data></Cell>
 					<Cell><Data ss:Type="String"><%= work.grid_square_image_file_name %></Data></Cell>
 					<Cell><Data ss:Type="String"><%= work.grid_square_image %></Data></Cell>
 					<Cell><Data ss:Type="String"><%= work.image_file_name %></Data></Cell>
