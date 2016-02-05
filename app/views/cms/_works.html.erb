@@ -20,7 +20,7 @@
 						<% @works.each do |work| %>
 						<% artist_name = work.artist.name rescue "NONE" %>
 							<tr class="tableRow">
-								<td width="12%"><%= work.brand %></td>
+								<td width="10%"><%= work.brand %></td>
 								<td width="22%"><%= truncate(work.title, :length => 20) %></td>
 								<td width="22%"><%= truncate(work.client, :length => 20) %></td>
 								<% if work.description.blank? || work.description == '' %>
@@ -33,9 +33,9 @@
 								<td width="6%"><% if work.homepage == true %><%= "true" %><% else %><%= "false" %><% end %></td>
 								<td width="10%"><%= truncate(artist_name, :length => 11) %></td>
 								<% if work.facebook_image == '' || work.facebook_image.blank? %>
-									<td width="6%" class="topperButtons">NO</td>
+									<td width="8%" class="topperButtons">NO</td>
 								<% else %>
-									<td width="6%" class="topperButtons">YES</td>
+									<td width="8%" class="topperButtons">YES</td>
 								<% end %>
 								<td width="1%" class="topperButtons"></td>
 								<td width="1%" class="topperButtons"><%= link_to "E", edit_placement_path(work), :title => "Edit #{work.title}", :class => "btn btn2 tips" %></td>
