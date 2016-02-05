@@ -197,6 +197,8 @@ i {font-size:18px;}
 .marginBottom {margin-bottom:22px!important;}
 .soundContainer {display:inline;}
 .floatLeft {float:left;}
+.smaller {margin-bottom:-20px;}
+.smaller2 {margin-top:30px!important;}
 /*.fadeMe {display:none;}*/
 
 @media screen and (max-width: 1575px) {

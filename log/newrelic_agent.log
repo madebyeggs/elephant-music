@@ -6057,3 +6057,5 @@
 [02/05/16 16:26:07 +0000 administrators-MacBook-Pro-2.local (12765)] INFO : Installing Rails 3 Error instrumentation
 [02/05/16 16:26:07 +0000 administrators-MacBook-Pro-2.local (12765)] INFO : Finished instrumentation
 [02/05/16 16:26:07 +0000 administrators-MacBook-Pro-2.local (12765)] INFO : Doing deferred dependency-detection before Rack startup
+[02/05/16 16:43:24 +0000 administrators-MacBook-Pro-2.local (12765)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/05/16 16:43:24 +0000 administrators-MacBook-Pro-2.local (12765)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
