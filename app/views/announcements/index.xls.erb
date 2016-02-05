@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ 	xmlns:o="urn:schemas-microsoft-com:office:office"
+ 	xmlns:x="urn:schemas-microsoft-com:office:excel"
+ 	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ 	xmlns:html="http://www.w3.org/TR/REC-html40">
+	<OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  		<AllowPNG/>
+ 	</OfficeDocumentSettings>
+ 	<Worksheet ss:Name="Sheet1">
+  		<Table>
+   			<Row>
+				<Cell><Data ss:Type="String">ID</Data></Cell>
+    			<Cell><Data ss:Type="String">TITLE</Data></Cell>
+    			<Cell><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    			<Cell><Data ss:Type="String">VIMEO IDENTIFIER</Data></Cell>
+				<Cell><Data ss:Type="String">SOUNDCLOUD IDENTIFIER</Data></Cell>
+				<Cell><Data ss:Type="String">SQUARE IMAGE NAME(400X400)</Data></Cell>
+				<Cell><Data ss:Type="String">SQUARE IMAGE LOCATION</Data></Cell>
+				<Cell><Data ss:Type="String">HOME IMAGE NAME(710X210)</Data></Cell>
+				<Cell><Data ss:Type="String">HOME IMAGE LOCATION</Data></Cell>
+				<Cell><Data ss:Type="String">FACEBOOK IMAGE NAME(1200X2630)</Data></Cell>
+				<Cell><Data ss:Type="String">FACEBOOK IMAGE LOCATION</Data></Cell>
+   			</Row>
+			<% @announcements.each do |announcement| %>
+     			<Row>
+					<Cell><Data ss:Type="String"><%= announcement.id %></Data></Cell>
+       				<Cell><Data ss:Type="String"><%= announcement.homepage_title %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.description %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.vimeo %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.soundcloud %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.square_image_file_name %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.square_image %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.image_file_name %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.image %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.facebook_image_file_name %></Data></Cell>
+					<Cell><Data ss:Type="String"><%= announcement.facebook_image %></Data></Cell>
+     			</Row>
+   			<% end %>
+  		</Table>
+ 	</Worksheet>
+</Workbook>

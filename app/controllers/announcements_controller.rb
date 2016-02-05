@@ -37,6 +37,12 @@ class AnnouncementsController < ApplicationController
 
     def index
       bring_in_models
+      respond_to do |format|
+          format.html
+          format.js
+          format.csv { send_data @announcements.to_csv }
+          format.xls #{ send_data @works.to_csv(col_sep: "\t") }
+      end
       set_meta_tags :og => {
         :url => "#{@currentUrl}",
         :title    => 'Elephant Music',
@@ -50,10 +56,6 @@ class AnnouncementsController < ApplicationController
         description: "21st Century Music Publishing | Unique Music to Picture",
         image: "#{@social.announcements_image}"
       }
-      respond_to do |format|
-        format.html
-        format.js
-      end
     end
 
     def edit

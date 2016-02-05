@@ -9,18 +9,24 @@
 			<section class="hidden-infos">
 				<a class="launchAnnouncement"><%= link_to '', news_path(announcement) %></a>
           		<div class="overlay3"></div>
-				<div class="icons4 play"></div>	        					
+          		<!-- 				<div class="icons5 play"></div>	    -->     					
 			</section>
-        	<div class="vidTitle">
+        	<div class="vidTitle2">
 				<div class="title-wrap2">
             		<h3 class="descriptionSize1 upcase title"><%= announcement.homepage_title %></h3>
           		</div>
-				<div class="subtitle-wrap2">
-        			<p class="subtitle"><%= truncate(announcement.description, :length => 260, :class => "descriptionSize1") %></p>
-				</div>
-				<div class="subtitle-wrap borderTop italics">
-					<p><%= announcement.created_at.strftime("%B %Y") %></p>
-				</div>
+				<% if announcement.description == '' || announcement.description.blank? %>
+					<div class="subtitle-wrap2">
+        				<p class="subtitle"><%= announcement.created_at.strftime("%B %Y") %></p>
+					</div>
+				<% else %>
+					<div class="subtitle-wrap2">
+        				<p class="subtitle"><%= truncate(announcement.description, :length => 260, :class => "descriptionSize1") %></p>
+					</div>
+					<div class="subtitle-wrap borderTop italics">
+						<p><%= announcement.created_at.strftime("%B %Y") %></p>
+					</div>
+				<% end %>
         	</div>
 		</div>
 	</div>
