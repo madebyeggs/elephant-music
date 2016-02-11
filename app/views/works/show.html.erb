@@ -59,10 +59,6 @@
 		<hr class="projectSeparator" />
 		<div class="fitvids">
 			<% if @work.vimeo? %>
-				<div id="videoLoaderWork">
-					<span class="centerer2"></span>
-					<%= image_tag 'status2.gif', :id => "loadingImage2" %>
-				</div>
         		<iframe id="videoPlayer" src="https://player.vimeo.com/video/<%= @work.vimeo %>?title=0&amp;byline=0&amp;" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			<% elsif @work.youtube? %>
 				<iframe id="videoPlayer2" src="https://www.youtube.com/embed/<%= @work.youtube %>" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
