@@ -96,6 +96,24 @@ $(function() {
     });
 });
 
+$(function() {
+    var iframe = $('#videoPlayer2');
+    var player = $f(iframe);
+
+    // When the player is ready, add listeners for pause, finish, and playProgress
+    player.addEvent('ready', function() {
+        $('#videoLoader').hide();
+		$('#videoLoader0').hide();
+		$('#videoLoader1').hide();
+		$('#videoLoader2').hide();
+		$('#videoLoader3').hide();
+		$('#videoLoader4').hide();
+		$('#videoLoader5').hide();
+		$('#videoLoader6').hide();
+		$('#videoLoaderWork2').hide();
+    });
+});
+
 // $(function(){
 // 	if ($('.pagination').length) {
 // 	    $(window).scroll(function() {

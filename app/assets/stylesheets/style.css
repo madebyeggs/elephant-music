@@ -166,7 +166,7 @@ i {font-size:18px;}
 }
 .topMargin {margin-top:43px!important;text-align: center;}
 
-#videoLoader, #videoLoader0, #videoLoader1, #videoLoader2, #videoLoader3, #videoLoader4, #videoLoader5, #videoLoader6, #videoLoader7, #videoLoader8, #videoLoaderWork {
+#videoLoader, #videoLoader0, #videoLoader1, #videoLoader2, #videoLoader3, #videoLoader4, #videoLoader5, #videoLoader6, #videoLoader7, #videoLoader8, #videoLoaderWork, #videoLoaderWork2 {
 	height:29%;
    	width: 22%;
    	position: fixed;
@@ -174,17 +174,17 @@ i {font-size:18px;}
    	z-index: 99;
 	text-align: center;
 }
-#videoLoaderWork {
+#videoLoaderWork, #videoLoaderWork2 {
 	height:51%;
 	width:52.1%;
 }
-.centerer, .centerer2
+.centerer, .centerer2, .centerer3
 {
     display: inline-block;
     height: 60%;
     vertical-align: middle;
 }
-#loadingImage, #loadingImage2 {
+#loadingImage, #loadingImage2, #loadingImage3 {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left:-46px!important;
