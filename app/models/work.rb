@@ -7,9 +7,7 @@ class Work < ActiveRecord::Base
   friendly_id :slug_candidates, use: [:slugged, :history]
   
   def slug_candidates
-    [
-      [:brand, :title],
-    ]
+    "#{brand}-#{title}"
   end
   
   # Friendly_Id code to only update the url for new records
