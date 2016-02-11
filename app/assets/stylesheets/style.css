@@ -68,12 +68,13 @@ a {
 .leftSide, .rightSide {background-color:#000000;}
 .leftSide {width:100%;padding-top:120px;}
 .rightSide {border-left:1px solid #3e3e3e;}
-.logo {max-width:202px!important;margin:0 auto;}
+.logo {width:220px!important;margin:10px auto 0px!important;}
 .logo img {max-width:100%;margin:0 auto;}
 ul.navigation {list-style-type: none;}
-.navigationWrapper {width:193px;margin:80px auto!important;}
+.navigationWrapper {width:207px;margin:80px auto!important;}
 .navigation a, .client {text-transform:uppercase;font-size:1.1em!important;color:#ffffff;font-family:'scapescape';}
 li.navButton {margin:8px 0px 8px 0px!important;}
+.social {width:207px;margin:100px auto 0px auto;}
 .social {width:115.3px;margin:100px auto 0px auto;}
 .centerSocial {margin:0 auto;}
 .client {position:absolute;margin:240px 0px 0px 80%;font-family:'Raleway'}
