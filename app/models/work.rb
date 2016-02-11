@@ -4,7 +4,13 @@ class Work < ActiveRecord::Base
   :homepage, :facebook_image, :grid_square_image, :brand
   
   extend FriendlyId
-  friendly_id :brand, use: [:slugged, :history]
+  friendly_id :slug_candidates, use: [:slugged, :history]
+  
+  def slug_candidates
+    [
+      [:brand, :title],
+    ]
+  end
   
   # Friendly_Id code to only update the url for new records
   def should_generate_new_friendly_id?
