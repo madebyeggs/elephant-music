@@ -66,7 +66,8 @@ class WorksController < ApplicationController
       @work = Work.find(params[:id])
     end
 
-    def update   
+    def update 
+      bring_in_models  
       @work = Work.find(params[:id])
       if @work.update_attributes(params[:work])
         respond_to do |format|

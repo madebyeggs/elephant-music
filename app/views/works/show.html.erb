@@ -65,11 +65,7 @@
 				</div>
         		<iframe id="videoPlayer" src="https://player.vimeo.com/video/<%= @work.vimeo %>?title=0&amp;byline=0&amp;" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			<% elsif @work.youtube? %>
-				<div id="videoLoaderWork2">
-					<span class="centerer3"></span>
-					<%= image_tag 'status2.gif', :id => "loadingImage3" %>
-				</div>
-				<iframe id="videoPlayer" src="https://www.youtube.com/embed/<%= @work.youtube %>" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe id="videoPlayer2" src="https://www.youtube.com/embed/<%= @work.youtube %>" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 			<% end %>
 		</div>
 		<% if @work.vimeo? %><hr class="projectSeparator" /><% end %>

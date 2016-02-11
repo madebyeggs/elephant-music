@@ -80,7 +80,9 @@ function applicash(){
 
 $(function() {
     var iframe = $('#videoPlayer');
+	var iframe2 = $('#videoPlayer2');
     var player = $f(iframe);
+	var player2 = $f(iframe2);
 
     // When the player is ready, add listeners for pause, finish, and playProgress
     player.addEvent('ready', function() {
@@ -93,8 +95,10 @@ $(function() {
 		$('#videoLoader5').hide();
 		$('#videoLoader6').hide();
 		$('#videoLoaderWork').hide();
-		$('#videoLoaderWork2').hide();
     });
+	player.addEvent('ready', function() {
+		$('#videoLoaderWork2').hide();
+	});
 });
 
 // $(function(){

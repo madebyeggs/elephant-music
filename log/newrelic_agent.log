@@ -6161,3 +6161,44 @@
 [02/11/16 11:49:18 +0000 unknown-b8-8d-12-3a-8b-1c.home (6976)] INFO : Installing Rails 3 Error instrumentation
 [02/11/16 11:49:18 +0000 unknown-b8-8d-12-3a-8b-1c.home (6976)] INFO : Finished instrumentation
 [02/11/16 11:51:29 +0000 unknown-b8-8d-12-3a-8b-1c.home (5834)] INFO : Starting Agent shutdown
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Starting the New Relic agent in "development" environment.
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] WARN : No configuration file found. Working directory = /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] WARN : Looked in these locations (based on defaults): /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/config/newrelic.yml, /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/newrelic.yml, /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/config/newrelic.yml, /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/newrelic.yml, /Users/administrator/.newrelic/newrelic.yml, /Users/administrator/newrelic.yml
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Environment: development
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Dispatcher: webrick
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Application: development
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing ActiveRecord instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing Net instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing deferred Rack instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing Rack::Builder middleware instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing Rails 3+ middleware instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing Rails 3 Controller instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Installing Rails 3 Error instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Finished instrumentation
+[02/11/16 12:45:19 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Doing deferred dependency-detection before Rack startup
+[02/11/16 12:45:25 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/11/16 12:45:25 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[02/11/16 12:49:11 +0000 unknown-b8-8d-12-3a-8b-1c.home (8216)] INFO : Starting Agent shutdown
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Starting the New Relic agent in "development" environment.
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] WARN : No configuration file found. Working directory = /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] WARN : Looked in these locations (based on defaults): /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/config/newrelic.yml, /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/newrelic.yml, /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/config/newrelic.yml, /Volumes/Other/MadeByEggs/Clients/ElephantMusic/V1/newrelic.yml, /Users/administrator/.newrelic/newrelic.yml, /Users/administrator/newrelic.yml
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Environment: development
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Dispatcher: webrick
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Application: development
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing ActiveRecord instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing Net instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing deferred Rack instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing Rack::Builder middleware instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing Rails 3+ middleware instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing Rails 3 Controller instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Installing Rails 3 Error instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Finished instrumentation
+[02/11/16 12:49:16 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] INFO : Doing deferred dependency-detection before Rack startup
+[02/11/16 12:49:18 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] ERROR : Invalid license key, please contact support@newrelic.com
+[02/11/16 12:49:18 +0000 unknown-b8-8d-12-3a-8b-1c.home (8228)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
