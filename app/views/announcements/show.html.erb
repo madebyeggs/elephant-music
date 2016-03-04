@@ -54,10 +54,6 @@
 		<div class="artist-right">
 			<% if @announcement.vimeo? %>
 				<div class="artistVideoContainer">
-					<div id="videoLoader">
-						<span class="centerer"></span>
-						<%= image_tag 'status2.gif', :id => "loadingImage" %>
-					</div>
 					<div class="fitvids topMargin">
 						<iframe id="videoPlayer" src="https://player.vimeo.com/video/<%= @announcement.vimeo %>?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						<hr class="projectSeparator" />

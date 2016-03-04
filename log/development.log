@@ -55538,3 +55538,3051 @@ Processing by WorksController#index as HTML
   Rendered layouts/_navigation.html.erb (1.2ms)
   Rendered layouts/_main.html.erb (0.0ms)
 Completed 200 OK in 118ms (Views: 112.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Processing by WorksController#index as HTML
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mWork Load (0.5ms)[0m  [1mSELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC[0m
+  Rendered works/index.html.erb within layouts/application (8.8ms)
+Compiled unslider.js  (0ms)  (pid 8228)
+Compiled application.js  (64ms)  (pid 8228)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 184ms (Views: 177.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /retina-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /isotope.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /slicknav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:23 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /font-size.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /image-hover.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /socials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /nprogress.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/basic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/centered.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /retina.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /nprogress.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /frogaloop.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /gmap3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unslider.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /unslider.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /application.js - 200 OK (77ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /fontawesome-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /bg-overlay.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-02-11 13:39:24 +0000
+Served asset /newLogo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2016-02-11 13:39:25 +0000
+Served asset /favicon.png - 200 OK (0ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2016-02-11 13:39:26 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (1.4ms)
+  Rendered announcements/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 63ms (Views: 56.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bg-overlay3.png" for 127.0.0.1 at 2016-02-11 13:39:28 +0000
+Served asset /bg-overlay3.png - 304 Not Modified (0ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[35mAbout Load (0.2ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (1.3ms)
+  Rendered announcements/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_main.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 52.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /retina-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /isotope.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /slicknav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /font-size.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /image-hover.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /socials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /nprogress.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/basic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/centered.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /retina.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /nprogress.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /frogaloop.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /gmap3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unslider.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /unslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-11 13:39:29 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-02-11 13:39:30 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-02-11 13:39:30 +0000
+Served asset /bg-overlay.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2016-02-11 13:39:30 +0000
+Served asset /fontawesome-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-02-11 13:39:30 +0000
+Served asset /newLogo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2016-02-11 13:39:30 +0000
+Served asset /favicon.png - 200 OK (0ms)
+
+
+Started GET "/cms" for 127.0.0.1 at 2016-02-11 13:39:32 +0000
+Processing by CmsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered cms/_abouts.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "announcements" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY id DESC[0m
+  Rendered cms/_announcements.html.erb (2.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "works" 
+  [1m[36mWork Load (0.2ms)[0m  [1mSELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  Rendered cms/_works.html.erb (13.5ms)
+  Rendered cms/_socials.html.erb (1.4ms)
+  Rendered cms/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 79ms (Views: 72.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/announcements/new" for 127.0.0.1 at 2016-02-11 13:39:36 +0000
+Processing by AnnouncementsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.2ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_form.html.erb (5.2ms)
+  Rendered announcements/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 64ms (Views: 58.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/announcements" for 127.0.0.1 at 2016-02-11 13:40:28 +0000
+Processing by AnnouncementsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XB7ZNNaVcg2Kp2NO2UDkUCi+i0Y2bRxMs5D3E4nxg6o=", "announcement"=>{"homepage_title"=>"Here is some other news item", "description"=>"BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v BLAH BLAJBLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v BLAH BLAJ v BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v ", "vimeo"=>"86412013", "soundcloud"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fc209f6d830 @original_filename="Screen Shot 2016-02-11 at 11.05.10.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"announcement[image]\"; filename=\"Screen Shot 2016-02-11 at 11.05.10.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/RackMultipart20160211-8228-5x1wxl>>}, "commit"=>"Create Announcement"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Command :: file -b --mime-type '/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/8b83df70cecdfa30ca5679db3e28e41c20160211-8228-1act3ue'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/a7f631fda7ad0dac5c61294cba4369bb20160211-8228-i8suqp[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/a7f631fda7ad0dac5c61294cba4369bb20160211-8228-i8suqp[0]'
+Command :: convert '/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/a7f631fda7ad0dac5c61294cba4369bb20160211-8228-i8suqp[0]' -auto-orient -resize "710x210>" -quality 80 '/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/a7f631fda7ad0dac5c61294cba4369bb20160211-8228-i8suqp20160211-8228-2v066f'
+Command :: file -b --mime '/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/a7f631fda7ad0dac5c61294cba4369bb20160211-8228-i8suqp20160211-8228-2v066f'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFriendlyId::Slug Load (0.2ms)[0m  SELECT "friendly_id_slugs".* FROM "friendly_id_slugs" WHERE "friendly_id_slugs"."sluggable_type" = 'Announcement' AND (slug = 'here-is-some-other-news-item' OR slug LIKE 'here-is-some-other-news-item--%') ORDER BY LENGTH(slug) DESC, slug DESC LIMIT 1
+Command :: file -b --mime-type '/var/folders/97/bhdqf5bs6t1d6bjjnzx6tgvm0000gn/T/4bad12a04435bc0c04089e905227261d20160211-8228-wjbn37'
+Binary data inserted for `string` type on column `image_content_type`
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "announcements" ("created_at", "description", "facebook_image_content_type", "facebook_image_file_name", "facebook_image_file_size", "facebook_image_updated_at", "homepage_title", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "is_announcement", "is_artist", "is_sound", "is_work", "large_image_content_type", "large_image_file_name", "large_image_file_size", "large_image_updated_at", "latest", "slug", "soundcloud", "square_image_content_type", "square_image_file_name", "square_image_file_size", "square_image_updated_at", "updated_at", "vimeo") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 11 Feb 2016 13:40:29 UTC +00:00], ["description", "BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v BLAH BLAJBLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v BLAH BLAJ v BLAH BLAJ BLAH BLAJ BLAH BLAJ BLAH BLAJ v "], ["facebook_image_content_type", nil], ["facebook_image_file_name", nil], ["facebook_image_file_size", nil], ["facebook_image_updated_at", nil], ["homepage_title", "Here is some other news item"], ["image_content_type", "image/png"], ["image_file_name", "Screen_Shot_2016-02-11_at_11.05.10.png"], ["image_file_size", 171509], ["image_updated_at", Thu, 11 Feb 2016 13:40:28 UTC +00:00], ["is_announcement", true], ["is_artist", false], ["is_sound", false], ["is_work", false], ["large_image_content_type", nil], ["large_image_file_name", nil], ["large_image_file_size", nil], ["large_image_updated_at", nil], ["latest", nil], ["slug", "here-is-some-other-news-item"], ["soundcloud", ""], ["square_image_content_type", nil], ["square_image_file_name", nil], ["square_image_file_size", nil], ["square_image_updated_at", nil], ["updated_at", Thu, 11 Feb 2016 13:40:29 UTC +00:00], ["vimeo", "86412013"]]
+  [1m[35mFriendlyId::Slug Load (0.1ms)[0m  SELECT "friendly_id_slugs".* FROM "friendly_id_slugs" WHERE "friendly_id_slugs"."sluggable_id" = 2 AND "friendly_id_slugs"."sluggable_type" = 'Announcement' ORDER BY "friendly_id_slugs".id DESC LIMIT 1
+  [1m[36mFriendlyId::Slug Load (0.1ms)[0m  [1mSELECT id FROM "friendly_id_slugs" WHERE "friendly_id_slugs"."sluggable_id" = 2 AND "friendly_id_slugs"."sluggable_type" = 'Announcement' AND "friendly_id_slugs"."slug" = 'here-is-some-other-news-item' ORDER BY "friendly_id_slugs".id DESC[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "friendly_id_slugs" ("created_at", "slug", "sluggable_id", "sluggable_type") VALUES (?, ?, ?, ?)  [["created_at", Thu, 11 Feb 2016 13:40:29 UTC +00:00], ["slug", "here-is-some-other-news-item"], ["sluggable_id", 2], ["sluggable_type", "Announcement"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cms
+Completed 302 Found in 240ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/cms" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Processing by CmsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered cms/_abouts.html.erb (0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "announcements" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY id DESC[0m
+  Rendered cms/_announcements.html.erb (3.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "works" 
+  [1m[36mWork Load (0.2ms)[0m  [1mSELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  Rendered cms/_works.html.erb (12.8ms)
+  Rendered cms/_socials.html.erb (1.2ms)
+  Rendered cms/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 131ms (Views: 125.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /retina-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /isotope.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /slicknav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /font-size.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /image-hover.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /socials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/basic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /nprogress.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/centered.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /retina.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /nprogress.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /frogaloop.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /gmap3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unslider.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /unslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-02-11 13:40:29 +0000
+Served asset /newLogo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2016-02-11 13:40:32 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (2.6ms)
+  Rendered announcements/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 57.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-02-11 13:40:32 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2016-02-11 13:40:32 +0000
+Served asset /fontawesome-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-02-11 13:40:32 +0000
+Served asset /bg-overlay.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay3.png" for 127.0.0.1 at 2016-02-11 13:40:33 +0000
+Served asset /bg-overlay3.png - 304 Not Modified (0ms)
+
+
+Started GET "/announcements" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.2ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.3ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.2ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (2.3ms)
+  Rendered announcements/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 127ms (Views: 118.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /retina-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /isotope.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /slicknav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /font-size.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /image-hover.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /socials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /nprogress.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/basic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/centered.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /retina.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /nprogress.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /frogaloop.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /gmap3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/unslider.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /unslider.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-11 13:40:34 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-02-11 13:40:35 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-02-11 13:40:35 +0000
+Served asset /bg-overlay.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-02-11 13:40:35 +0000
+Served asset /newLogo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2016-02-11 13:40:35 +0000
+Served asset /favicon.png - 200 OK (0ms)
+
+
+Started GET "/assets/bg-overlay3.png" for 127.0.0.1 at 2016-02-11 13:40:37 +0000
+Served asset /bg-overlay3.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/announcements" for 127.0.0.1 at 2016-02-11 13:41:37 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.2ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  Rendered announcements/_announcement.html.erb (12.5ms)
+  Rendered announcements/index.html.erb within layouts/application (44.3ms)
+Compiled application.js  (15ms)  (pid 8361)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_main.html.erb (0.2ms)
+Completed 200 OK in 433ms (Views: 231.8ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /retina-responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /isotope.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /slicknav.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /clients.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /font-size.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /image-hover.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /pagination.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /socials.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /style.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /font-awesome.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /nprogress.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/basic.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/centered.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /modernizr.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /turbolinks.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /retina.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /nprogress.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /frogaloop.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /gmap3.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/unslider.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /unslider.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-11 13:41:38 +0000
+Served asset /application.js - 200 OK (27ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-02-11 13:41:39 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-02-11 13:41:39 +0000
+Served asset /bg-overlay.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-02-11 13:41:39 +0000
+Served asset /newLogo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2016-02-11 13:41:39 +0000
+Served asset /favicon.png - 200 OK (1ms)
+
+
+Started GET "/assets/bg-overlay3.png" for 127.0.0.1 at 2016-02-11 13:41:41 +0000
+Served asset /bg-overlay3.png - 304 Not Modified (1ms)
+
+
+Started GET "/news/ozzie-signs-to-elephant" for 127.0.0.1 at 2016-02-11 13:42:54 +0000
+Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"ozzie-signs-to-elephant"}
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" WHERE "announcements"."slug" = 'ozzie-signs-to-elephant' LIMIT 1[0m
+  Rendered announcements/show.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 64.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bg-close.png" for 127.0.0.1 at 2016-02-11 13:42:54 +0000
+Served asset /bg-close.png - 304 Not Modified (1ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2016-02-11 13:42:56 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (2.9ms)
+  Rendered announcements/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 94.1ms | ActiveRecord: 0.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-11 13:55:42 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[36mAbout Load (0.3ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.5ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.6ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.4ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.4ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mSocial Load (0.5ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.6ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mAnnouncement Load (0.6ms)[0m  [1mSELECT "announcements".* FROM "announcements" ORDER BY id DESC[0m
+  Rendered announcements/index.html.erb within layouts/application (117.1ms)
+  Rendered layouts/_navigation.html.erb (6.6ms)
+  Rendered layouts/_main.html.erb (1.0ms)
+Completed 200 OK in 1356ms (Views: 624.2ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /application.css - 304 Not Modified (131ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /reset.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /retina-responsive.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /isotope.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /slicknav.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:44 +0000
+Served asset /bootstrap.css - 304 Not Modified (104ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /clients.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /font-size.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /image-hover.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /pagination.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /socials.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /style.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /font-awesome.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /nprogress.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry/basic.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry/centered.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /turbolinks.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /modernizr.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /retina.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:45 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (127ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /nprogress.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /frogaloop.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /gmap3.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/unslider.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /unslider.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-11 13:55:46 +0000
+Served asset /application.js - 304 Not Modified (90ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-02-11 13:55:47 +0000
+Served asset /newLogo.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-02-11 13:55:47 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (7ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2016-02-11 13:55:47 +0000
+Served asset /fontawesome-webfont.woff2 - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-02-11 13:55:47 +0000
+Served asset /bg-overlay.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2016-02-11 13:55:47 +0000
+Served asset /favicon.png - 200 OK (110ms)
+
+
+Started GET "/assets/bg-overlay3.png" for 127.0.0.1 at 2016-02-11 13:55:50 +0000
+Served asset /bg-overlay3.png - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-11 13:59:40 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[35mAbout Load (0.4ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.5ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.5ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.7ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.7ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mSocial Load (0.4ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.4ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (9.6ms)
+  Rendered announcements/index.html.erb within layouts/application (14.5ms)
+Compiled application.js  (62ms)  (pid 8993)
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_main.html.erb (0.1ms)
+Completed 200 OK in 515ms (Views: 487.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /application.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /slicknav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /retina-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /isotope.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:41 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /bootstrap.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /font-size.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /image-hover.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /socials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /nprogress.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry/centered.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry/basic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /retina.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:42 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /nprogress.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /frogaloop.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /gmap3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /application.js - 200 OK (99ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-02-11 13:59:43 +0000
+Served asset /bg-overlay.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-02-11 13:59:44 +0000
+Served asset /newLogo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2016-02-11 13:59:44 +0000
+Served asset /favicon.png - 200 OK (0ms)
+
+
+Started GET "/assets/bg-overlay3.png" for 127.0.0.1 at 2016-02-11 14:00:56 +0000
+Served asset /bg-overlay3.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-03 19:46:18 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.3ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.4ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.4ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.3ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.4ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.2ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (39.3ms)
+  Rendered announcements/index.html.erb within layouts/application (44.3ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_main.html.erb (0.3ms)
+Completed 200 OK in 405ms (Views: 201.9ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /application.css - 200 OK (75ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /reset.css - 200 OK (1ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /retina-responsive.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /jquery.fancybox.css - 200 OK (1ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /isotope.css - 200 OK (2ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /slicknav.css - 200 OK (1ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /deviseAndCMS.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /bootstrap-theme.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /bootstrap.css - 200 OK (6ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /bootstrapOverrides.css - 200 OK (37ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /clients.css - 200 OK (2ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /font-size.css - 200 OK (3ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /image-hover.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /jquery-ui.theme.min.css - 200 OK (1ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry_overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /nprogressOverrides.css - 200 OK (2ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /pagination.css - 200 OK (1ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /socials.css - 200 OK (2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /font-awesome.css - 200 OK (10ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /nprogress.css - 200 OK (2ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /nprogress-bootstrap.css - 200 OK (2ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/basic.css - 200 OK (2ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/centered.css - 200 OK (6ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/fluid.css - 200 OK (2ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/gutters.css - 200 OK (2ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/infinitescroll.css - 200 OK (1ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/right-to-left.css - 200 OK (2ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/transitions.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /jquery-1.9.1.min.js - 200 OK (2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /turbolinks.js - 200 OK (4ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /modernizr.js - 200 OK (2ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /retina.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /jquery.fitvids.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /jquery.slicknav.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (51ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /twitter/bootstrap.js - 200 OK (14ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /nprogress.js - 200 OK (6ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /nprogress-turbolinks.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /jquery.prettySocial.js - 200 OK (2ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /frogaloop.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /gmap3.js - 200 OK (2ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:19 +0000
+Served asset /masonry/jquery.event-drag.js - 200 OK (2ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /masonry/modernizr-transitions.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /jquery.fittext.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /jquery.lettering.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /jquery.textillate.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /application.js - 200 OK (23ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /newLogo.jpg - 200 OK (6ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /scape_copy-webfont.woff2 - 200 OK (1ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /fontawesome-webfont.woff2 - 200 OK (5ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /bg-overlay.png - 200 OK (1ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2016-03-03 19:46:20 +0000
+Served asset /favicon.png - 200 OK (3ms)
+
+
+Started GET "/assets/bg-overlay3.png" for 127.0.0.1 at 2016-03-03 19:46:22 +0000
+Served asset /bg-overlay3.png - 200 OK (47ms)
+
+
+Started GET "/news/here-is-some-other-news-item" for 127.0.0.1 at 2016-03-03 19:46:23 +0000
+Processing by AnnouncementsController#show as HTML
+  Parameters: {"id"=>"here-is-some-other-news-item"}
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mAnnouncement Load (4.6ms)[0m  [1mSELECT "announcements".* FROM "announcements" WHERE "announcements"."slug" = 'here-is-some-other-news-item' LIMIT 1[0m
+  Rendered announcements/show.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 76.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/bg-close.png" for 127.0.0.1 at 2016-03-03 19:46:23 +0000
+Served asset /bg-close.png - 200 OK (7ms)
+
+
+Started GET "/assets/status2.gif" for 127.0.0.1 at 2016-03-03 19:46:23 +0000
+Served asset /status2.gif - 200 OK (1ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2016-03-03 19:46:33 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[35mAbout Load (0.2ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  Rendered announcements/_announcement.html.erb (2.2ms)
+  Rendered announcements/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 100.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 19:46:35 +0000
+Processing by WorksController#index as HTML
+  [1m[36mAbout Load (0.2ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.2ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (0.3ms)[0m  SELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC
+  Rendered works/index.html.erb within layouts/application (34.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 139ms (Views: 131.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 19:46:35 +0000
+Processing by WorksController#index as HTML
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.2ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (0.2ms)[0m  SELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC
+  Rendered works/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 66.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bg-play.png" for 127.0.0.1 at 2016-03-03 19:46:36 +0000
+Served asset /bg-play.png - 200 OK (4ms)
+
+
+Started GET "/placements/1" for 127.0.0.1 at 2016-03-03 19:46:36 +0000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (2.3ms)[0m  SELECT "works".* FROM "works" WHERE "works"."slug" = '1' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT sluggable_id FROM "friendly_id_slugs" WHERE sluggable_type = 'Work' AND slug = '1'[0m
+  [1m[35mWork Load (0.3ms)[0m  SELECT "works".* FROM "works" WHERE "works"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  Rendered works/show.html.erb within layouts/application (58.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 118.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 19:46:41 +0000
+Processing by WorksController#index as HTML
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mWork Load (0.3ms)[0m  [1mSELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC[0m
+  Rendered works/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 106.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/placements/22" for 127.0.0.1 at 2016-03-03 19:46:42 +0000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.2ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."slug" = '22' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT sluggable_id FROM "friendly_id_slugs" WHERE sluggable_type = 'Work' AND slug = '22'
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."id" = ? LIMIT 1[0m  [["id", "22"]]
+  [1m[35mArtist Load (0.2ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  Rendered works/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 65.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 19:46:46 +0000
+Processing by WorksController#index as HTML
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (0.2ms)[0m  SELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC
+  Rendered works/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 72ms (Views: 66.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/placements/25" for 127.0.0.1 at 2016-03-03 19:46:47 +0000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mAbout Load (0.2ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.2ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."slug" = '25' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT sluggable_id FROM "friendly_id_slugs" WHERE sluggable_type = 'Work' AND slug = '25'[0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."id" = ? LIMIT 1  [["id", "25"]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  Rendered works/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 105.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 19:46:53 +0000
+Processing by WorksController#index as HTML
+  [1m[35mAbout Load (0.2ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mWork Load (0.2ms)[0m  [1mSELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC[0m
+  Rendered works/index.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 71ms (Views: 64.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/placements/36" for 127.0.0.1 at 2016-03-03 19:46:54 +0000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."slug" = '36' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT sluggable_id FROM "friendly_id_slugs" WHERE sluggable_type = 'Work' AND slug = '36'
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."id" = ? LIMIT 1[0m  [["id", "36"]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  Rendered works/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 132.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 19:46:57 +0000
+Processing by WorksController#index as HTML
+  [1m[36mAbout Load (0.2ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (0.2ms)[0m  SELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC
+  Rendered works/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 72ms (Views: 65.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/placements/1" for 127.0.0.1 at 2016-03-03 20:44:31 +0000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."slug" = '1' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT sluggable_id FROM "friendly_id_slugs" WHERE sluggable_type = 'Work' AND slug = '1'[0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1[0m
+  Rendered works/show.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 128ms (Views: 121.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 20:44:34 +0000
+Processing by WorksController#index as HTML
+  [1m[35mAbout Load (0.1ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.1ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mWork Load (0.2ms)[0m  [1mSELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC[0m
+  Rendered works/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 71.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/placements/35" for 127.0.0.1 at 2016-03-03 20:44:35 +0000
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mAbout Load (0.2ms)[0m  SELECT "abouts".* FROM "abouts" 
+  [1m[36mAnnouncement Load (0.2ms)[0m  [1mSELECT "announcements".* FROM "announcements" [0m
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works" WHERE "works"."homepage" = 't'
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'[0m
+  [1m[35mSound Load (0.1ms)[0m  SELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" [0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" LIMIT 1
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."slug" = '35' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT sluggable_id FROM "friendly_id_slugs" WHERE sluggable_type = 'Work' AND slug = '35'
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."id" = ? LIMIT 1[0m  [["id", "35"]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."id" = 0 LIMIT 1
+  Rendered works/show.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 77ms (Views: 68.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/placements" for 127.0.0.1 at 2016-03-03 20:45:00 +0000
+Processing by WorksController#index as HTML
+  [1m[36mAbout Load (0.1ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.2ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  [1m[35mWork Load (0.2ms)[0m  SELECT "works".* FROM "works" ORDER BY latest DESC, created_at DESC
+  Rendered works/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 111.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Processing by AnnouncementsController#index as HTML
+  [1m[36mAbout Load (0.2ms)[0m  [1mSELECT "abouts".* FROM "abouts" [0m
+  [1m[35mAnnouncement Load (0.1ms)[0m  SELECT "announcements".* FROM "announcements" 
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works" WHERE "works"."homepage" = 't'[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT "artists".* FROM "artists" WHERE "artists"."homepage" = 't'
+  [1m[36mSound Load (0.1ms)[0m  [1mSELECT "sounds".* FROM "sounds" WHERE "sounds"."homepage" = 't'[0m
+  [1m[35mSocial Load (0.1ms)[0m  SELECT "socials".* FROM "socials" 
+  [1m[36mSocial Load (0.1ms)[0m  [1mSELECT "socials".* FROM "socials" LIMIT 1[0m
+  Rendered announcements/_announcement.html.erb (3.5ms)
+  Rendered announcements/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_main.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 111.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina-responsive.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /retina-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fancybox.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /jquery.fancybox.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/isotope.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /isotope.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slicknav.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /slicknav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/deviseAndCMS.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /deviseAndCMS.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /bootstrap-theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrapOverrides.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /bootstrapOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/clients.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /clients.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-size.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /font-size.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/image-hover.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /image-hover.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /jquery-ui.theme.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry_overrides.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /masonry_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogressOverrides.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /nprogressOverrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:40 +0000
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/socials.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /socials.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /nprogress.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-bootstrap.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /nprogress-bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/basic.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/basic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/centered.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/centered.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/fluid.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/fluid.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/gutters.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/gutters.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/infinitescroll.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/infinitescroll.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/right-to-left.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/right-to-left.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/transitions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /jquery-1.9.1.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/modernizr.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/retina.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /retina.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fitvids.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /jquery.fitvids.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.slicknav.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /jquery.slicknav.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /nprogress.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nprogress-turbolinks.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /nprogress-turbolinks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.prettySocial.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /jquery.prettySocial.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frogaloop.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /frogaloop.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmap3.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /gmap3.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.event-drag.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/jquery.event-drag.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/jquery.imagesloaded.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/jquery.infinitescroll.min.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/jquery.infinitescroll.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry/modernizr-transitions.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /masonry/modernizr-transitions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.fittext.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /jquery.fittext.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.lettering.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /jquery.lettering.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.textillate.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /jquery.textillate.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /newLogo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scape_copy-webfont.woff2" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /scape_copy-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /fontawesome-webfont.woff2 - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg-overlay.png" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /bg-overlay.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/newLogo.jpg" for 127.0.0.1 at 2016-03-04 07:28:41 +0000
+Served asset /newLogo.jpg - 304 Not Modified (0ms)
